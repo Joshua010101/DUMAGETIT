@@ -637,7 +637,7 @@ p {
     background-color: #0365fa;
     width: 100%;
     height: 164px;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 17px;
 }
 
@@ -649,7 +649,7 @@ p {
 
 .sectiongroup-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 4.8px;
 }
 
@@ -663,9 +663,9 @@ p {
 
 .food {
     background-color: #d9d9d9;
-    width: 90px;
+    width: 118.13333333333333333333333333333px;
     height: 90px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,7 +681,7 @@ p {
     margin: 6px 0 0;
 }
 
-.blog-container {
+.hotel-container {
     width: 90px;
     height: 110px;
     display: flex;
@@ -689,22 +689,22 @@ p {
     align-items: center;
 }
 
-.blogs {
+.hotel {
     background-color: #d9d9d9;
-    width: 90px;
+    width: 118.13333333333333333333333333333px;
     height: 90px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.blogs img {
+.hotel img {
     width: 40px;
     height: 40px;
 }
 
-.blog-container p {
+.hotel-container p {
     font-size: 12px;
     margin: 6px 0 0;
 }
@@ -719,9 +719,9 @@ p {
 
 .tourist-spots {
     background-color: #d9d9d9;
-    width: 90px;
+    width: 118.13333333333333333333333333333px;
     height: 90px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,88 +737,9 @@ p {
     margin: 6px 0 0;
 }
 
-.local-brand-container {
-    width: 90px;
-    height: 110px;
+.sectiongroup-2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.local-brands {
-    background-color: #d9d9d9;
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.local-brands img {
-    width: 40px;
-    height: 40px;
-}
-
-.local-brand-container p {
-    font-size: 12px;
-    margin: 6px 0 0;
-}
-
-.clothing-container {
-    width: 90px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.clothing {
-    background-color: #d9d9d9;
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.clothing img {
-    width: 40px;
-    height: 40px;
-}
-
-.clothing-container p {
-    font-size: 12px;
-    margin: 6px 0 0;
-}
-
-.shoes-container {
-    width: 90px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.shoes {
-    background-color: #d9d9d9;
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.shoes img {
-    width: 40px;
-    height: 40px;
-}
-
-.shoes-container p {
-    font-size: 12px;
-    margin: 6px 0 0;
+    justify-content: space-around;
 }
 
 .souvenirs-container {
@@ -831,9 +752,9 @@ p {
 
 .souvenirs {
     background-color: #d9d9d9;
-    width: 90px;
+    width: 182.2px;
     height: 90px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -849,7 +770,7 @@ p {
     margin: 6px 0 0;
 }
 
-.customer-care-container {
+.contact-container {
     width: 90px;
     height: 110px;
     display: flex;
@@ -857,30 +778,25 @@ p {
     align-items: center;
 }
 
-.customer-care {
+.contact {
     background-color: #d9d9d9;
-    width: 90px;
+    width: 182.2px;
     height: 90px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.customer-care img {
+.contact img {
     width: 40px;
     height: 40px;
 }
 
-.customer-care-container p {
+.contact-container p {
     font-size: 12px;
     margin: 6px 0 0;
 }   
-
-.sectiongroup-2 {
-    display: flex;
-    justify-content: space-between;
-}
 
 .best-for-you label {
     display: flex;

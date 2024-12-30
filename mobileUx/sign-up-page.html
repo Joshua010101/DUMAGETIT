@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUMAGETIT</title>
+    <link rel="icon" href="../Elements/dumagetit logo.png" type="image/png">
+    <link rel="stylesheet" href="../mobileUx/mobile.css" type="text/css">
+    <script src="../mobileUx/mobile.js" defer ></script>
+</head>
+<body class="signup-container">
+        <nav class="nav-bar">
+            <img src="../Elements/dumagetit logo.png" alt="Dumagetit logo" id="navbar-logo">
+            <img src="../Elements/menu.png" alt="Menu icon" id="menu-icon">
+        </nav>
+        <div class="login-header">
+            <h1 class="sign">Sign</h1>
+            <h1 class="up">Up</h1>
+        </div>
+        <div class="login-body">
+            <form action="home-page.html" class="login-form">
+                <a href="login-signup-page.html"><img src="../Elements/back-arrow.png" class="back-arrow" alt="back-arrow"></a>
+                <div class="username-input">
+                    <label for="username" class="username"><p>Username</p></label>
+                    <div class="username-fieldset">
+                        <img src="../Elements/user.png" alt="user icon" class="user-icon">
+                        <input 
+                            type="text" 
+                            name="username" 
+                            id="username" 
+                            minlength="4"
+                            title="Username must contain at least 4 characters, including at least one uppercase letter, one lowercase letter, and one number."
+                            required>
+                    </div>
+                </div>
+                <div class="email-input">
+                    <label for="email" class="email"><p>Email</p></label>
+                    <div class="email-fieldset">
+                        <img src="../Elements/mail.png" alt="mail icon" class="mail-icon">
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="password-input">
+                    <label for="password" class="password"><p>Password</p></label>
+                    <div class="password-fieldset">
+                        <img src="../Elements/door-key.png" alt="key icon" class="key-icon">
+                        <div class="password-fieldset-icon">
+                            <img src="../Elements/visible.png" alt="visible icon" id="visible-icon">
+                        </div>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password" 
+                            minlength="8"
+                            title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character."
+                            pattern="[0-9A-Za-z\d@$!%*?&]{8,}"
+                            required>
+                    </div>
+                </div>
+                <div class="terms-condition-link">
+                    <input type="checkbox" name="terms-condition" id="terms-condition-checkbox" required >
+                    <p>Accept<a href="" class="terms-condition">Terms and Condition</a></p>
+                </div>
+                <a href="home-page.html"><button class="signup-button">Sign Up</button></a>
+                <hr>
+            </form>
+            <div class="sign-up-link">
+                <p>Already have a account? <a href="login-page.html">Log In</a></p>
+            </div>
+        </div>
+        <div class="window">
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="close-btn">
+                        <img src="../Elements/close.png" alt="close icon">
+                    </div>
+                    <div class="modal-terms">
+                        <h2>Terms and Conditions</h2>
+                        <h3>Effective Date: [Insert Date]</h3>
+                        
+                        <p>Welcome to [Your Website/App Name]! Before using our services, please carefully review the following terms and conditions:</p>
+                        <ol>
+
+                            <li><h3>Acceptance of Terms</h3></li>    
+                            <p>By accessing or using our services, you agree to be bound by these terms. If you do not agree, you may not use our services.</p>    
+                        
+                            <li><h3>Eligibility</h3></li>    
+                            <p>You must be at least [Insert Age] years old to use our services. By using our services, you represent and warrant that you meet this requirement.</p>
+
+                            <li><h3>User Responsibilities</h3></li>
+                                <ul>
+                                    <li><p>Do not use our services for any illegal activities.</p></li>
+                                    <li><p>Keep your account information secure.</p></li>
+                                    <li><p>You are responsible for all activities conducted through your account.</p></li>
+                                </ul>
+
+                            <li><h3>Intellectual Property</h3></li>
+                            <p>All content, trademarks, and materials on this platform are owned by [Your Company Name] or its licensors. You may not use these without written permission.</p>
+                        </ol>
+                        <p>Thank you for choosing [Your Company Name].</p> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="checkbox" name="terms-condition" id="modal-checkbox" required >
+                    <p>Accept <strong>Terms and Condition</strong></p>
+                </div>
+                <button class="accept-button">Accept</button>    
+            </div>
+        </div>
+</body>
+</html>

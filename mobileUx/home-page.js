@@ -25,43 +25,6 @@ function homePage () {
         window.location.href = 'login-signup-page.html';
     })
 
-    postModal ();
-}
-
-
-function postModal () {
-    const openPostModal = document.getElementById('post');
-    const windowPostModal = document.querySelector('.window-post-modal');
-    const closePostModal = document.getElementById('modalpost-back-arrow');
-    const buttonPostModal = document.getElementById('next-button');
-    const textarea = document.getElementById('post-modal');
-    const inputField = document.querySelector('.post-here');
-    
-    openPostModal.addEventListener('click', (e) => {
-        e.preventDefault();
-        windowPostModal.style.visibility = 'visible';
-    })
-
-    windowPostModal.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (e.target === windowPostModal) {
-            windowPostModal.style.visibility = 'hidden';
-        }
-    })
-
-    closePostModal.addEventListener('click', (e) => {
-        e.preventDefault();
-        windowPostModal.style.visibility = 'hidden';
-    })
-
-    buttonPostModal.addEventListener('click', (e) => {
-
-        const typeText = textarea.value;
-        inputField.value = typeText
-        inputField.placeholder = typeText
-        e.preventDefault();
-        windowPostModal.style.visibility = 'hidden';
-    })
 }
 
 

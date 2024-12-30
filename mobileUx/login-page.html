@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUMAGETIT</title>
+    <link rel="icon" href="../Elements/dumagetit logo.png" type="image/png">
+    <link rel="stylesheet" href="../mobileUx/mobile.css" type="text/css">
+    <script src="../mobileUx/mobile.js" defer ></script>
+</head>
+<body class="login-container">
+        <nav class="nav-bar">
+            <img src="../Elements/dumagetit logo.png" alt="Dumagetit logo" id="navbar-logo">
+            <img src="../Elements/menu.png" alt="Menu icon" id="menu-icon">
+        </nav>
+        <div class="login-header">
+            <h1 class="log">Log</h1>
+            <h1 class="in">In</h1>
+        </div>
+        <div class="login-body">
+            <form action="home-page.html" class="login-form">
+                <a href="login-signup-page.html"><img src="../Elements/back-arrow.png" class="back-arrow" alt="back-arrow"></a>
+                <div class="username-input">
+                    <label for="username" class="username"><p>Username</p></label>
+                    <div class="username-fieldset">
+                        <img src="../Elements/user.png" alt="user icon" class="user-icon">
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                </div>
+                <div class="password-input">
+                    <label for="password" class="password"><p>Password</p></label>
+                    <div class="password-fieldset">
+                        <img src="../Elements/door-key.png" alt="key icon" class="key-icon">
+                        <div class="password-fieldset-icon">
+                            <img src="../Elements/visible.png" alt="visible icon" id="visible-icon">
+                        </div>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </div>
+                <div class="forgot-password-link">
+                    <a href="" class="forgot-password"><p>Forgot Password?</p></a>
+                </div>
+                <a href="home-page.html"><button class="login-button">Log In</button></a>
+                <hr>
+            </form>
+            <div class="sign-up-link">
+                <p>Don't have a account? <a href="sign-up-page.html">Sign up</a></p>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,1110 @@
+@font-face {
+    font-family: sfprodisplay_blackitalic;
+    src:url(../Fonts/SFPRODISPLAYBLACKITALIC.otf)
+}
+
+@font-face {
+    font-family: sfprodisplay_regular;
+    src:url(../Fonts/SFPRODISPLAYREGULAR.OTF)
+}
+
+@font-face {
+    font-family: sfprodisplay_medium;
+    src:url(../Fonts/SFPRODISPLAYMEDIUM.OTF)
+}
+
+@font-face {
+    font-family: sfprodisplay_bold;
+    src: url(../Fonts/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+    font-family: sfprodisplay_lightitalic;
+    src: url(../Fonts/SFPRODISPLAYLIGHTITALIC.OTF);
+}
+
+#login-signup-container h1 {
+    font-family: sfprodisplay_blackitalic;
+}
+
+h1 {
+    font-family: sfprodisplay_blackitalic;
+}
+
+h2 {
+    font-family: sfprodisplay_bold;
+}    
+
+h3 {
+    font-family: sfprodisplay_regular;
+}
+
+p {
+    font-family: sfprodisplay_medium;
+}
+
+/* Startup Page */
+
+#start-up {
+   background-color: #0365fa;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+}
+
+#start-up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+.startup-bg a {
+}
+
+.startup-bg img {
+    width: 211px;
+    height: 103px;
+}
+
+/*-------------------*/
+
+/*Login-Signup Page*/
+ 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-logo {
+    width: 40px;
+    height: 40px;
+}
+
+#menu-icon {
+    width: 24px;
+    height: 4px;
+}
+
+#login-signup-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-signup-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.welcome-header h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.welcome-header h3 {
+    font-size: 25px;
+}
+
+.login-signup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-signup-buttons button {
+    background-color: #0365fa;
+    width: 300px;
+    height: 40px;
+    border-radius: 14px;
+    font-size: 15px;
+    border: none;
+    color: #ffffff;
+}
+
+.login-signup-login-button, .login-signup-signup-button {
+    font-family: sfprodisplay_bold;
+}
+
+/*------------------*/
+
+/*login Page*/
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 5vh;
+}
+
+.login-container nav{
+    margin: 8px 8px 0;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-header .in {
+    color: #0365fa;
+}
+
+.login-header h1 {
+    font-size: 50px;
+}
+
+.login-body {
+    position: relative;
+    height: 72.345971563981042654028436018957vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-body::before {
+    content: "";
+    background-color: #d9d9d9;
+    border-radius: 20px 20px 0 0;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 80%;
+    margin: 0;
+    justify-content: center;
+}
+
+.back-arrow {
+    width: 20px;
+}
+
+.username-input, .password-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#username, #password {
+    margin: 0;
+    padding-left: 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.username-fieldset img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.password-fieldset img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.password-fieldset-icon {
+    display: flex;
+    justify-content: end;
+}
+
+.username p, .password p {
+    margin: 6px 0;
+}
+
+.username-input input, .password-input input {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+}
+
+.forgot-password-link {
+    text-align: end;
+}
+
+.forgot-password {
+    color: #0365fa;
+    text-decoration: none;
+}
+
+.forgot-password p {
+    margin: 0;
+    padding: 0;
+}
+
+.login-button {
+    background-color: #0365fa;
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sfprodisplay_bold;
+    margin: 32px 0;
+}
+
+.login-form hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: #9c9c9c;
+}
+
+/*------------------*/
+
+/* signup Page */
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 5vh;
+    position: relative;
+}
+
+.signup-container nav{
+    margin: 8px 8px 0;
+}
+
+.login-header .up {
+    color: #0365fa;
+}
+
+.email-fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.email-fieldset img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding-left: 10px  ;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 40px;
+
+    /*Add padding right same with the user and password */
+}
+
+.email p {
+    margin: 6px 0;
+}
+
+.email-input input {
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+}
+
+.terms-condition-link {
+    display: flex;
+    gap: 5px;
+}
+
+#terms-condition-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.terms-condition-link p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.terms-condition-link a {
+    text-decoration: none;
+    color: #0365fa;
+}
+
+/* -------MODAL---------- */
+
+.window {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   backdrop-filter: blur(4px);
+   visibility: hidden;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 500px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    left: 5.0048717948717948717948717948718%;
+    right: 5.0048717948717948717948717948718%;
+    top: 15.0048717948717948717948717948718%;
+    bottom: 15.0048717948717948717948717948718%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+    height: 76%;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.modal-content img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-terms {
+    padding: 0 20px 0 20px;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.modal-terms p {
+    font-family: sfprodisplay_regular;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 10px 0;
+}
+
+.modal-footer p {
+    margin: 0;
+}
+
+#modal-checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.accept-button {
+    background-color: #0365fa;
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sfprodisplay_bold;
+    margin: 32px 0 0;
+    padding: 0;
+}
+
+/* -------/MODAL---------- */
+
+.signup-button {
+    background-color: #0365fa;
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sfprodisplay_bold;
+    margin: 32px 0 ;
+    padding: 0;
+}
+
+.sign-up-link p {
+    margin-bottom: 0px;
+}
+
+.sign-up-link a {
+    color: #0365fa;
+    text-decoration: none;
+}
+
+
+/**------------------/
+
+/*-------home-page-------*/
+
+
+
+.window-home-page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    visibility: hidden;
+    align-self: start;
+    justify-content: end;
+}
+
+.user-modal {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 40%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 20px 20px 0 0;
+    gap: 30px;
+}
+
+.user-modal hr {
+    border: none;
+    height: 1px;
+    width:  80%;
+    background-color: #9c9c9c;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-info  img {
+    width: 30px;
+    height: 30px;
+}
+
+
+#signout-button  {
+    background-color: #0365fa;
+    border: none;
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    font-family: sfprodisplay_bold;
+    color: white;
+}
+
+.user-menu-container {
+    position: relative;
+    background-color: #d9d9d9;
+    width: 114px;
+    height: 33px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-menu {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+    gap: 6px;
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.user-menu p {
+    margin: 0;
+    font-family: sfprodisplay_regular;
+    font-size: 11px;
+}
+
+.down-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location {
+    display: flex;
+    margin: 20px 0 5px;
+    gap: 5px;
+}
+
+.location img {
+    width: 18px;
+    height: 18px;
+}
+
+.location p {
+    font-family: sfprodisplay_lightitalic;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#search {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
+    padding-left: 42px;
+    font-family: sfprodisplay_regular;
+}
+
+.search-icon {
+   position: absolute;
+   left: 21px;
+}
+
+.search-icon div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon img {
+    position: absolute;
+}
+
+#search-icon {
+    width: 15px;
+    height: 15px;
+    
+}
+
+#ellipse-search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.slider {
+    background-color: #0365fa;
+    width: 100%;
+    height: 164px;
+    border-radius: 15px;
+    margin-bottom: 17px;
+}
+
+.sections {
+    width: 100%;
+    height: 77.014218009478672985781990521327%;
+    margin-bottom: 17px;
+}
+
+.sectiongroup-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8px;
+}
+
+.food-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food img {
+    width: 40px;
+    height: 40px;
+}
+
+.food-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.blog-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs img {
+    width: 40px;
+    height: 40px;
+}
+
+.blog-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.tourist-spot-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tourist-spots {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tourist-spots img {
+    width: 40px;
+    height: 40px;
+}
+
+.tourist-spot-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.local-brand-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-brands {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local-brands img {
+    width: 40px;
+    height: 40px;
+}
+
+.local-brand-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.clothing-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clothing {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clothing img {
+    width: 40px;
+    height: 40px;
+}
+
+.clothing-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.shoes-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shoes {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoes img {
+    width: 40px;
+    height: 40px;
+}
+
+.shoes-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.souvenirs-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.souvenirs {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.souvenirs img {
+    width: 40px;
+    height: 40px;
+}
+
+.souvenirs-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.customer-care-container {
+    width: 90px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer-care {
+    background-color: #d9d9d9;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-care img {
+    width: 40px;
+    height: 40px;
+}
+
+.customer-care-container p {
+    font-size: 12px;
+    margin: 6px 0 0;
+}   
+
+.sectiongroup-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-for-you label {
+    display: flex;
+    justify-content: space-between;  
+    font-family: sfprodisplay_bold;
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+
+.best-section {
+    width: 100%;
+    height: auto;
+}
+
+.sectiongroup1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8px;
+}
+
+.sectiongroup2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 {
+    background-color: #d9d9d9;
+    width: 49.358974358974358974358974358974%;
+    height: 114px;
+    border-radius: 15px;
+}
+
+.section2 {
+    background-color: #d9d9d9;
+    width: 49.358974358974358974358974358974%;
+    height: 114px;
+    border-radius: 15px;
+}
+
+.section3 {
+    background-color: #d9d9d9;
+    width: 49.358974358974358974358974358974%;
+    height: 114px;
+    border-radius: 15px;
+}
+
+.section4 {
+    background-color: #d9d9d9;
+    width: 49.358974358974358974358974358974%;
+    height: 114px;
+    border-radius: 15px;
+}
+
+.best-for-you {
+    margin: 0;
+}
+
+.best-for-you label {
+    margin: 0;
+}
+
+.best-for-you p {
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+
+
+
+/*------------------*/
+
+/*------------section pages----------*/
+
+.home-section-pages {
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.home-section-pages::-webkit-scrollbar {
+    display: none;
+} 
+
+.home-section-pages p {
+    font-size: 11px;
+    font-family: sfprodisplay_medium;
+    margin: 11px;
+}
+
+.food-section, .blog-section, .tourist-spot-section, 
+.local-brands-section, .clothing-section, .shoe-section,
+.souvenirs-section, .customer-care-section {
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.food-section {
+    margin-left: 10px;
+    background-color: #b7b7b7;
+}
+
+.tourist-spot-section p {
+    width: 59px;
+}
+
+.local-brands-section p {
+    width: 58px;
+}
+
+.customer-care-section p {
+    width: 68px;
+}
+
+.customer-care-section {
+    margin-right: 10px;
+}
+
+.post-here {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-here input {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 42px;
+    font-family: sfprodisplay_regular;
+}
+
+.post-here img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding-left: 6px;
+}
+
+.window-post-modal {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    visibility: visible;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+ }
+
+.post-modal-container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-modal img {
+    width: 20px;
+}
+
+.post-modal h3 {
+    margin: 0;
+}
+
+.post-modal textarea {
+    font-family: sfprodisplay_regular;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#post-modal {
+    box-sizing: border-box;
+    width: 100%;
+    height: 180px;
+}
+
+#next-button {
+    border: 0;
+    background-color: #0365fa;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+}
+
+.content-1, .content-2, .content-3{
+    background-color: #0365fa;
+    height: 390px;
+    border-radius: 20px;
+}
+
+
+/*-------food section-------*/
+
+/*-------------------------*/
+
+/*-----------------------------------*/

@@ -70,25 +70,42 @@
         </a>
     </div>
     <div class="inquiries-container">
-        <div class="inquiries-body">
+        
             <div class="inquiries-title">
                 <h1>For More Inquiries</h1>
             </div>
+        <div class="inquiries-body">    
             <div class="contact-info">
-                <p>If you have any questions, require further information, 
-                    or need assistance, please don't hesitate to reach out. 
-                    Our team is here to help and ensure your needs are met 
-                    promptly.</p>
-                <ul>
-                    <li><strong>Email</strong>: info@dumagetit.com</li>
-                    <li><strong>Phone</strong>: +1 (123) 456-7890</li>
-                    <li><strong>Address</strong>: 123 Main Street, Dumaguete City, Philippines</li>
-                </ul>
-                <p>You can also contact us through our website or follow us 
-                    on social media for updates and support. We look forward 
-                    to assisting you!</p>
+                <div class="navbar-form">
+                    <img src="../Elements/back-arrow.png" alt="back arrow">
+                    <h3>Business Details</h3>
+                </div>
+                <form action="home-page.html">
+                    <div class="top-form">
+                        <label for="business-name" class="business-name">
+                            <p>Business name</p>
+                            <input type="text" name="business-name" id="business-name">
+                        </label>
+                        <label for="business-type" class="business-type">
+                            <p>Business type</p>
+                            <input type="text" name="business-type" id="business-type">
+                        </label>
+                    </div>
+                    <label for="location-form" class="location-form">
+                        <p>Location</p>
+                        <input type="text" name="location-form" id="location-form">
+                    </label>
+                    <label for="owners-name" class="owners-name">
+                        <p>Owner's name</p>
+                        <input type="text" name="owners-name" id="owners-name">
+                    </label>
+                    <label for="business-license-num" class="business-license-num">
+                        <p>Business license number</p>
+                        <input type="number" name="business-license-num" id="business-license-num">
+                    </label>
+                </form>
             </div>
-            <button type="button" id="partner-button"><a href="partner-with-us-page.html" class="partner-link">Partner With Us</a></button>
+            <button type="button" id="partner-submit-button"><a href="home-page.html" class="partner-link">Submit</a></button>
         </div>
     </div>
 </body>

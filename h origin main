@@ -1,0 +1,75 @@
+[33mcommit 50d1a79a581a969c8964e2b7d6cff5ea8e4ab91c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Joshua <ellojoshualloydarcinas@gmail.com>
+Date:   Wed Jan 1 02:27:49 2025 +0800
+
+    ga clean ra sa error --> css
+    
+    pero i accept lang
+
+[33mcommit 9d64ad043ddb71acf03004081f5a2ac889285938[m[33m ([m[1;31morigin/feature/home-page-updated[m[33m, [m[1;32mfeature/home-page-updated[m[33m)[m
+Author: Joshua <ellojoshualloydarcinas@gmail.com>
+Date:   Wed Jan 1 00:58:30 2025 +0800
+
+    home-page/html and js --> idk unsay changes ani i forgot
+
+[33mcommit 0fd47d060621e8e59b33330650f2bc0fb932fb83[m
+Author: Joshua <ellojoshualloydarcinas@gmail.com>
+Date:   Tue Dec 31 03:10:35 2024 +0800
+
+    food-page and hotel-page revision --> post here feature
+
+[33mcommit 741e70ccf95407b1ae12be27447178aabe43c043[m
+Author: Joshua <ellojoshualloydarcinas@gmail.com>
+Date:   Tue Dec 31 02:43:47 2024 +0800
+
+    home-page revised hehe nalimtan ang blogs --> hotels
+
+[33mcommit 7d0a470aba3b5c0b611a8a22400f7d104dcff34d[m
+Author: Joshua <ellojoshualloydarcinas@gmail.com>
+Date:   Tue Dec 31 02:34:25 2024 +0800
+
+    home-page revised
+
+[33mcommit 10471035f5222d4285e5a46fcdcbeabdc8535a5c[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31morigin/feature/home-page[m[33m, [m[1;32mfeature/home-page[m[33m)[m
+Author: Nate <131325715+Nathan-Roisse-Anuada@users.noreply.github.com>
+Date:   Tue Dec 31 01:21:10 2024 +0800
+
+    Delete MobileUx directory
+
+[33mcommit 7e8145cbbe772ef2a2a2d82df560ad9919d09d51[m
+Merge: acbbcfd 31cd734
+Author: Nate <131325715+Nathan-Roisse-Anuada@users.noreply.github.com>
+Date:   Tue Dec 31 01:19:13 2024 +0800
+
+    Merge pull request #4 from Joshua010101/main
+    
+    mobileux
+
+[33mcommit 31cd734fa960f56f16b55735834f54b2af3a3732[m
+Author: Joshua010101 <ellojoshualloydarcinas@gmail.com>
+Date:   Tue Dec 31 01:17:09 2024 +0800
+
+    mobileux
+    
+    add mobile file
+
+[33mcommit acbbcfde5f9b0a69f41c3da57232f73aabd102c1[m
+Merge: be93812 99be723
+Author: Nate <131325715+Nathan-Roisse-Anuada@users.noreply.github.com>
+Date:   Sat Dec 28 00:58:51 2024 +0800
+
+    Merge pull request #1 from Joshua010101/main
+    
+    File compile
+
+[33mcommit 99be7234e4da9bfc1d1fd1ad8ce76649ce07e6b3[m
+Author: Joshua010101 <ellojoshualloydarcinas@gmail.com>
+Date:   Sat Dec 28 00:56:46 2024 +0800
+
+    File compile
+
+[33mcommit be9381258eb21a2cbb745423c7a69bc201265610[m
+Author: Nate <131325715+Nathan-Roisse-Anuada@users.noreply.github.com>
+Date:   Fri Dec 27 23:53:40 2024 +0800
+
+    Initial commit

@@ -40,18 +40,27 @@ function openContent () {
     const content4 = document.querySelector('.content-4');
     const content5 = document.querySelector('.content-5');
     const content6 = document.querySelector('.content-6');
+    const content7 = document.querySelector('.content-7');
+    const content8 = document.querySelector('.content-8');
+    const content9 = document.querySelector('.content-9');
     const descriptionContainer1 = document.querySelector('.description-container-1');
     const descriptionContainer2 = document.querySelector('.description-container-2');
     const descriptionContainer3 = document.querySelector('.description-container-3');
     const descriptionContainer4 = document.querySelector('.description-container-4');
     const descriptionContainer5 = document.querySelector('.description-container-5');
     const descriptionContainer6 = document.querySelector('.description-container-6');
+    const descriptionContainer7 = document.querySelector('.description-container-7');
+    const descriptionContainer8 = document.querySelector('.description-container-8');   
+    const descriptionContainer9 = document.querySelector('.description-container-9');
     const contentBase1 = document.querySelector('.content-base-1');
     const contentBase2 = document.querySelector('.content-base-2');
     const contentBase3 = document.querySelector('.content-base-3');
     const contentBase4 = document.querySelector('.content-base-4');
     const contentBase5 = document.querySelector('.content-base-5');
     const contentBase6 = document.querySelector('.content-base-6');
+    const contentBase7 = document.querySelector('.content-base-7');
+    const contentBase8 = document.querySelector('.content-base-8');
+    const contentBase9 = document.querySelector('.content-base-9');
 
 /*---------content 1----------*/   
 
@@ -223,7 +232,104 @@ window.addEventListener('scroll', () => {
     }
 })
 
-/*----------------------------*/        
+/*----------------------------*/
+
+/*---------content 7---------- */
+
+content7.addEventListener('click', () => {
+
+    contentBase7.classList.add('expanded');
+    content7.classList.add('expanded');
+    descriptionContainer7.classList.add('expanded')
+
+    const sectionContainer = document.querySelector('.section-container');
+    const content = document.querySelector('content')
+    
+    if (content7.classList.contains('expanded')) {
+        contentBase7.classList.add('expanded');
+        content7.classList.add('expanded');
+        descriptionContainer7.classList.add('expanded')
+        sectionContainer.classList.add('expanded');
+        content.classList.add('expanded');
+        }
+})
+
+
+window.addEventListener('scroll', () => {
+    if (contentBase7.classList.contains('expanded') ) {
+        contentBase7.classList.remove('expanded');
+        content7.classList.remove('expanded');
+        descriptionContainer7.classList.remove('expanded');
+        descriptionContainer7.scrollTop = 0;
+    }
+})
+
+/*----------------------------*/
+
+/*---------content 8----------*/
+
+content8.addEventListener('click', () => {
+
+    contentBase8.classList.add('expanded');
+    content8.classList.add('expanded');
+    descriptionContainer8.classList.add('expanded')
+
+    const sectionContainer = document.querySelector('.section-container');
+    const content = document.querySelector('content')
+    
+    if (content8.classList.contains('expanded')) {
+        contentBase8.classList.add('expanded');
+        content8.classList.add('expanded');
+        descriptionContainer8.classList.add('expanded')
+        sectionContainer.classList.add('expanded');
+        content.classList.add('expanded');
+        }
+})
+
+
+window.addEventListener('scroll', () => {
+    if (contentBase8.classList.contains('expanded') ) {
+        contentBase8.classList.remove('expanded');
+        content8.classList.remove('expanded');
+        descriptionContainer8.classList.remove('expanded');
+        descriptionContainer8.scrollTop = 0;
+    }
+})
+
+/*----------------------------*/
+
+/*---------content 9----------*/
+
+content9.addEventListener('click', () => {
+
+    contentBase9.classList.add('expanded');
+    content9.classList.add('expanded');
+    descriptionContainer9.classList.add('expanded')
+
+    const sectionContainer = document.querySelector('.section-container');
+    const content = document.querySelector('content')
+    
+    if (content9.classList.contains('expanded')) {
+        contentBase9.classList.add('expanded');
+        content9.classList.add('expanded');
+        descriptionContainer9.classList.add('expanded')
+        sectionContainer.classList.add('expanded');
+        content.classList.add('expanded');
+        }
+})
+
+
+window.addEventListener('scroll', () => {
+    if (contentBase9.classList.contains('expanded') ) {
+        contentBase9.classList.remove('expanded');
+        content9.classList.remove('expanded');
+        descriptionContainer9.classList.remove('expanded');
+        descriptionContainer9.scrollTop = 0;
+    }
+})
+
+/*----------------------------*/
+
 }
 
 

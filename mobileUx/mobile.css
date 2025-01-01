@@ -961,12 +961,8 @@ p {
     
 }
 
-<<<<<<< HEAD
-.content-1, .content-2, .content-3, .content-4,.content-5,.content-6,.content-7,.content-8,.content-9{
-    background-color: #0365fa;
-=======
-.content-1, .content-2, .content-3, .content-4,.content-5,.content-6{
->>>>>>> 1594dd0c64ad784c42ae3d29c089067ebcfa6238
+.content-1, .content-2, .content-3, .content-4,.content-5,.content-6 {
+
     height: 390px;
     width: 95%;
     border-radius: 20px;

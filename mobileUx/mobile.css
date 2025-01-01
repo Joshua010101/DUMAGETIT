@@ -412,6 +412,10 @@ p {
     font-family: sfprodisplay_regular;
 }
 
+.modal-terms li {
+    font-family: sfprodisplay_regular;
+}
+
 .modal-footer {
     display: flex;
     align-items: center;

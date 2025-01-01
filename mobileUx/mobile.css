@@ -43,6 +43,7 @@ p {
     font-family: sfprodisplay_medium;
 }
 
+
 /* Startup Page */
 
 #start-up {
@@ -869,6 +870,27 @@ p {
 
 /*------------section pages----------*/
 
+
+.section-container.expanded {
+    height: 2,707.125px;
+    overflow: visible;
+}
+
+.content.expanded {
+    height: 2,707.125px;
+    overflow: visible;
+}
+
+.section-window {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .home-section-pages {
     display: flex;
     gap: 10px;
@@ -920,12 +942,109 @@ p {
     flex-direction: column;
     gap: 10px;
     overflow: scroll;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.content-base-1, .content-base-2, .content-base-3,
+.content-base-4, .content-base-5, .content-base-6 {
+    height: 390px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-6.expanded {
+    
 }
 
 .content-1, .content-2, .content-3, .content-4,.content-5,.content-6{
-    background-color: #0365fa;
     height: 390px;
+    width: 95%;
     border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+}
+
+.content-base-1.expanded, .content-1.expanded,
+.content-base-2.expanded, .content-2.expanded,
+.content-base-3.expanded, .content-3.expanded,
+.content-base-4.expanded, .content-4.expanded,
+.content-base-5.expanded, .content-5.expanded,
+.content-base-6.expanded, .content-6.expanded {
+    height: 500px;
+}
+
+.content-1.expanded, .content-2.expanded,
+.content-3.expanded, .content-4.expanded,
+.content-5.expanded, .content-6.expanded {
+    display: flex;
+}
+
+.description-container-1.expanded, .description-container-2.expanded,
+.description-container-3.expanded, .description-container-4.expanded, 
+.description-container-5.expanded, .description-container-6.expanded {
+    height:  66.666666666666666666666666666667%;
+    top: 33.333333333333333333333333333333%;
+    position: absolute;
+    overflow: scroll;;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+.image-container-1.expanded, .image-container-2.expanded,
+.image-container-3.expanded, .image-container-4.expanded,
+.image-container-5.expanded, .image-container-6.expanded {
+    justify-content: start;
+}
+
+.content-1 h3, .content-2 h3, .content-3 h3, .content-4 h3, .content-5 h3, .content-6 h3 {
+    font-family: sfprodisplay_blackitalic;
+}
+
+.content-1 h3, p, .content-2 h3, p, .content-3 h3, p
+.content-4 h3, p, .content-4 h3, p, .content-6 h3, p {
+    width: 100%;
+}
+
+.content-1, .content-2, .content-3, .content-4, .content-5, .content-6{
+    position: absolute;
+}
+
+.image-container-1, .image-container-2,
+.image-container-3, .image-container-4, 
+.image-container-5, .image-container-6 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 66.666666666666666666666666666667%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 0;
+    overflow: hidden;
+}
+
+.image-container-1 img, .image-container-2 img,
+.image-container-3 img, .image-container-4 img,
+.image-container-5 img, .image-container-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.description-container-1, .description-container-2,
+.description-container-3, .description-container-4,
+.description-container-5, .description-container-6 {
+    height: 33.333333333333333333333333333333%;
+    background-color: white;
+    border-radius: 0  0 10px 10px;
+    margin: 0 10px 10px;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 

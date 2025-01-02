@@ -235,6 +235,14 @@ p {
     justify-content: end;
 }
 
+#visibile-icon {
+    display: visible;
+}
+
+#invisible-icon {
+    display: none;
+}
+
 .username p, .password p {
     margin: 6px 0;
 }

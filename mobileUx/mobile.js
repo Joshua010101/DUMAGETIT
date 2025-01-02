@@ -57,10 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Display logged-in username in navbar (if applicable)
     const loggedInUser = sessionStorage.getItem("loggedInUser");
-    const userNameDisplay = document.getElementById("user-name-display");
+    const userNameDisplay = document.getElementById("user-name");
+    const userNameDisplay2 = document.querySelector(".user-modal-text");
     if (loggedInUser && userNameDisplay) {
         userNameDisplay.textContent = loggedInUser;
+        userNameDisplay2.textContent = loggedInUser;
     }
+
 });
 
 
@@ -111,7 +114,6 @@ document.addEventListener('click', (e) => {
 
 function toggleShowPassword() {
     const visibleIcon = document.getElementById('visible-icon');
-    const hiddenIcon = document.getElementById('invisible-icon');
     const password = document.getElementById('password');
 
     if (event.target === visibleIcon) {

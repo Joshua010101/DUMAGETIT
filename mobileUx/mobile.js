@@ -105,5 +105,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+document.addEventListener('click', (e) => {
+    toggleShowPassword();
+})
 
+function toggleShowPassword() {
+    const visibleIcon = document.getElementById('visible-icon');
+    const hiddenIcon = document.getElementById('invisible-icon');
+    const password = document.getElementById('password');
+
+    if (event.target === visibleIcon) {
+        if (password.type === 'password') {
+            password.type = 'text';
+            visibleIcon.src = '../Elements/hidden.png';
+        } else {
+            password.type = 'password';
+            visibleIcon.style.display = 'visible';
+            visibleIcon.src = '../Elements/visible.png';
+        }    
+    }
+    
+}
 

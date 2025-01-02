@@ -55,13 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         signUpButton.addEventListener("click", handleSignUp);
     }
 
-    // Display logged-in username in navbar (if applicable)
-    const loggedInUser = sessionStorage.getItem("loggedInUser");
-    const userNameDisplay = document.getElementById("user-name-display");
-    if (loggedInUser && userNameDisplay) {
-        userNameDisplay.textContent = loggedInUser;
-    }
-});
+    
 
 
 
@@ -105,5 +99,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
-
+});

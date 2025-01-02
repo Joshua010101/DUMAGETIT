@@ -332,4 +332,37 @@ window.addEventListener('scroll', () => {
 
 }
 
+/*------------Booking Modal stuff---------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const bookingModal = document.getElementById("booking-modal");
+    const closeBookingModal = document.getElementById("close-booking-modal");
+    const bookTourButtons = document.querySelectorAll(".book-tour-btn");
+    const bookingForm = document.getElementById("booking-form");
 
+    // Show booking modal on "Book Tour Guide" button click
+    bookTourButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            bookingModal.classList.add("visible");
+        });
+    });
+
+    // Close booking modal
+    closeBookingModal.addEventListener("click", () => {
+        bookingModal.classList.remove("visible");
+    });
+
+    // Close booking modal when clicking outside content
+    bookingModal.addEventListener("click", (event) => {
+        if (event.target === bookingModal) {
+            bookingModal.classList.remove("visible");
+        }
+    });
+
+    // Handle booking form submission
+    bookingForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Thank you for booking a tour guide! You will receive a call soon. For inquiries, contact us.");
+        bookingModal.classList.remove("visible");
+        bookingForm.reset();
+    });
+});

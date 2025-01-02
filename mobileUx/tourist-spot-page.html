@@ -80,7 +80,7 @@
                     <h3>Dive Into Paradise:Apo Island</h3>
                 
                 <p>Explore the pristine waters of Apo Island, renowned for its marine sanctuary. Swim with sea turtles and marvel at vibrant coral reefs in this ecological treasure. </p>
-               <button>Book Tour Guide</button>
+               <button  class="book-tour-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
                   
             </div>
@@ -186,6 +186,19 @@
             </div>
         </div>
     </div>
-    
+     <!-- Booking Modal -->
+     <div id="booking-modal" class="booking-modal hidden">
+        <div class="booking-modal-content">
+            <span class="close-btn" id="close-booking-modal">&times;</span>
+            <h2>Book Your Tour Guide</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <button type="submit" class="book-now-btn">Book Now</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,20 +1,68 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Handle Login
+    function handleLogin(event) {
+        event.preventDefault(); // Prevent default form submission
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value;
 
-document.getElementById("visible-icon").addEventListener("click", function() {
-    var passwordField = document.getElementById("password");
-    var passwordIcon = document.getElementById("visible-icon");
+        const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+        const user = accounts.find(
+            (acc) => acc.username === username && acc.password === password
+        );
 
-    
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        passwordIcon.src = "../Elements/visible.png";
-        passwordIcon.alt = "visible icon";
+        if (user) {
+            sessionStorage.setItem("loggedInUser", username);
+            alert("Login successful!");
+            window.location.href = "home-page.html";
+        } else {
+            alert("Invalid username or password! Please try again.");
+        }
     }
-    else {
-        passwordField.type = "password";
-        passwordIcon.src = "../Elements/hidden.png";
-        passwordIcon.alt = "hidden icon";
+
+    // Handle Sign Up
+    function handleSignUp(event) {
+        event.preventDefault(); // Prevent default form submission
+        const username = document.getElementById("username").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+
+        if (username && email && password) {
+            const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+
+            if (accounts.some((acc) => acc.username === username)) {
+                alert("Username already exists. Please choose a different one.");
+                return;
+            }
+
+            accounts.push({ username, email, password });
+            localStorage.setItem("accounts", JSON.stringify(accounts));
+
+            alert("Account created successfully! You can now log in.");
+            window.location.href = "login-page.html"; // Redirect to login page
+        } else {
+            alert("Please fill out all required fields.");
+        }
+    }
+
+    // Assign event listeners
+    const loginButton = document.querySelector(".login-button");
+    if (loginButton) {
+        loginButton.addEventListener("click", handleLogin);
+    }
+
+    const signUpButton = document.querySelector(".signup-button");
+    if (signUpButton) {
+        signUpButton.addEventListener("click", handleSignUp);
+    }
+
+    // Display logged-in username in navbar (if applicable)
+    const loggedInUser = sessionStorage.getItem("loggedInUser");
+    const userNameDisplay = document.getElementById("user-name-display");
+    if (loggedInUser && userNameDisplay) {
+        userNameDisplay.textContent = loggedInUser;
     }
 });
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

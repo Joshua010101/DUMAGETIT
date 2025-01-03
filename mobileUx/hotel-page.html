@@ -80,7 +80,8 @@
                 <div class="description-container-1">
                     <h3>HOTEL ESSENCIA</h3>
                 <p>Located at 39 Real Street, Dumaguete City, Hotel Essencia combines modern luxury with convenience. Situated just minutes away from the iconic Rizal Boulevard and popular dining spots, this premier hotel offers well-appointed rooms, a spa, and an in-house restaurant. Ideal for both business and leisure travelers, Hotel Essencia ensures a relaxing stay in the heart of the city. </p>
-               <button>Book Hotel</button> 
+                <button class="book-hotel-btn">Book Hotel Room</button>
+
                 </div><!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -92,7 +93,8 @@
                 <div class="description-container-2">
                     <h3>SIERRA HOTEL</h3>
                 <p>Nestled in the serene surroundings of EJ Blanco Drive, Dumaguete City, Sierra Hotel is the perfect choice for travelers seeking tranquility and elegance. Featuring stylishly designed rooms, a refreshing pool, and a cozy café, this boutique hotel is just a short drive from Dumaguete’s bustling downtown and famous landmarks. Its prime location offers the best of both worlds—peaceful relaxation and easy access to the city’s attractions.</p>
-                <button>Book Hotel</button>
+                <button class="book-hotel-btn">Book Hotel Room</button>
+
                 </div> <!-- Ikaw bala sa design sa btn-->
               
             </div>
@@ -105,7 +107,8 @@
                 <div class="description-container-3">
                     <h3>THE BRICKS HOTEL</h3>
                 <p>Located along the picturesque Rizal Boulevard, The Bricks Hotel offers a unique blend of industrial chic design and beachfront convenience. Perfect for those who love stunning seaside views, this boutique hotel boasts modern rooms, a trendy café, and proximity to Dumaguete’s vibrant nightlife. Stay at The Bricks and enjoy a cozy, stylish experience right by the sea. </p>
-                <button>Book Hotel</button>
+                <button class="book-hotel-btn">Book Hotel Room</button>
+
                 </div> <!-- Ikaw bala sa design sa btn-->    
             </div>
         </div>
@@ -118,12 +121,38 @@
                     <h3>HOTEL PALWA</h3>
                 <p>Conveniently situated at 53 Sta. Rosa Street, Dumaguete City, Hotel Palwa is known for its affordable rates without compromising comfort and quality. With its homey ambiance, friendly staff, and central location, it’s a favorite among budget-conscious travelers. Just a short walk from the public market and commercial centers, Hotel Palwa makes exploring the city a breeze.
                     </p>
-                    <button>Book Hotel</button>
+                    <button class="book-hotel-btn">Book Hotel Room</button>
+
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
     </div>
-    
+    <!-- Hotel Booking Modal --> 
+<div id="hotel-booking-modal" class="hotel-booking-modal hidden"><!-- Ikaw bala sa design sa Modal sleepings sko kay kapoy biyahe-->
+    <div class="hotel-booking-modal-content">
+        <span class="close-btn" id="close-hotel-booking-modal">&times;</span>
+        <h2>Book Your Hotel Room</h2>
+        <form id="hotel-booking-form">
+            <label for="hotel-name">Full Name:</label>
+            <input type="text" id="hotel-name" placeholder="Enter your full name" required>
+            <label for="hotel-phone">Phone Number:</label>
+            <input type="tel" id="hotel-phone" placeholder="Enter your phone number" required>
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" required>
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" required>
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" required>
+                <option value="">Select a room type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <button type="submit" class="hotel-book-now-btn">Book Now</button>
+        </form>
+    </div>
+</div>
+
 </body>
 <footer class="footer">
     <div>

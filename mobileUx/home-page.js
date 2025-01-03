@@ -377,3 +377,39 @@ document.addEventListener("DOMContentLoaded", () => {
         bookingForm.reset();
     });
 });
+
+/*------------Hotel Booking Modal stuff---------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const hotelBookingModal = document.getElementById("hotel-booking-modal");
+    const closeHotelBookingModal = document.getElementById("close-hotel-booking-modal");
+    const bookHotelButtons = document.querySelectorAll(".book-hotel-btn");
+    const hotelBookingForm = document.getElementById("hotel-booking-form");
+
+    // Show hotel booking modal on "Book Hotel Room" button click
+    bookHotelButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            hotelBookingModal.classList.add("visible");
+        });
+    });
+
+    // Close hotel booking modal
+    closeHotelBookingModal.addEventListener("click", () => {
+        hotelBookingModal.classList.remove("visible");
+    });
+
+    // Close hotel booking modal when clicking outside content
+    hotelBookingModal.addEventListener("click", (event) => {
+        if (event.target === hotelBookingModal) {
+            hotelBookingModal.classList.remove("visible");
+        }
+    });
+
+    // Handle hotel booking form submission
+    hotelBookingForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Thank you for booking your hotel! You will receive a confirmation soon.");
+        hotelBookingModal.classList.remove("visible");
+        hotelBookingForm.reset();
+    });
+});
+

@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         signUpButton.addEventListener("click", handleSignUp);
     }
 
-<<<<<<< HEAD
-    
-=======
     // Display logged-in username in navbar (if applicable)
     const loggedInUser = sessionStorage.getItem("loggedInUser");
     const userNameDisplay = document.getElementById("user-name");
@@ -68,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
->>>>>>> b54a18984e6769feaac7d50df0d35ebf8b6a6b8b
 
 
 
@@ -112,9 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-<<<<<<< HEAD
-});
-=======
 document.addEventListener('click', (e) => {
     toggleShowPassword();
 })
@@ -136,4 +129,3 @@ function toggleShowPassword() {
     
 }
 
->>>>>>> b54a18984e6769feaac7d50df0d35ebf8b6a6b8b

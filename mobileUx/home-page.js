@@ -42,7 +42,7 @@ function openContent () {
     const content6 = document.querySelector('.content-6');
     const content7 = document.querySelector('.content-7');
     const content8 = document.querySelector('.content-8');
-    const content9 = document.querySelector('.content-9');
+    const content9 = document.querySelector('.content-last');
     const descriptionContainer1 = document.querySelector('.description-container-1');
     const descriptionContainer2 = document.querySelector('.description-container-2');
     const descriptionContainer3 = document.querySelector('.description-container-3');
@@ -51,7 +51,7 @@ function openContent () {
     const descriptionContainer6 = document.querySelector('.description-container-6');
     const descriptionContainer7 = document.querySelector('.description-container-7');
     const descriptionContainer8 = document.querySelector('.description-container-8');   
-    const descriptionContainer9 = document.querySelector('.description-container-9');
+    const descriptionContainer9 = document.querySelector('.description-container-last');
     const contentBase1 = document.querySelector('.content-base-1');
     const contentBase2 = document.querySelector('.content-base-2');
     const contentBase3 = document.querySelector('.content-base-3');
@@ -60,7 +60,9 @@ function openContent () {
     const contentBase6 = document.querySelector('.content-base-6');
     const contentBase7 = document.querySelector('.content-base-7');
     const contentBase8 = document.querySelector('.content-base-8');
-    const contentBase9 = document.querySelector('.content-base-9');
+    const contentBase9 = document.querySelector('.content-base-last');
+
+    lastContent ();
 
 /*---------content 1----------*/   
 
@@ -300,33 +302,42 @@ window.addEventListener('scroll', () => {
 
 /*---------content 9----------*/
 
-content9.addEventListener('click', () => {
 
-    contentBase9.classList.add('expanded');
-    content9.classList.add('expanded');
-    descriptionContainer9.classList.add('expanded')
 
-    const sectionContainer = document.querySelector('.section-container');
-    const content = document.querySelector('content')
+function lastContent () {
+
+    content9.addEventListener('click', () => {
+        const sectionContainer = document.querySelector('.section-container');
+        const content = document.querySelector('content');
+        const footer = document.querySelector('.footer');
     
-    if (content9.classList.contains('expanded')) {
         contentBase9.classList.add('expanded');
         content9.classList.add('expanded');
-        descriptionContainer9.classList.add('expanded')
-        sectionContainer.classList.add('expanded');
-        content.classList.add('expanded');
+        descriptionContainer9.classList.add('expanded');
+    
+        if (content9.classList.contains('expanded')) {
+            sectionContainer.classList.add('expanded');
+            content.classList.add('expanded');
+            footer.classList.add('expanded');
+
         }
-})
+    });
+
+    
+    
+    window.addEventListener('scroll', () => {
+        if (contentBase9.classList.contains('expanded') ) {
+            contentBase9.classList.remove('expanded');
+            content9.classList.remove('expanded');
+            descriptionContainer9.classList.remove('expanded');
+            descriptionContainer9.scrollTop = 0;
+            footer.classList.remove('expanded');
+            
+        }
+    })
+}
 
 
-window.addEventListener('scroll', () => {
-    if (contentBase9.classList.contains('expanded') ) {
-        contentBase9.classList.remove('expanded');
-        content9.classList.remove('expanded');
-        descriptionContainer9.classList.remove('expanded');
-        descriptionContainer9.scrollTop = 0;
-    }
-})
 
 /*----------------------------*/
 

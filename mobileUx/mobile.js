@@ -55,7 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
         signUpButton.addEventListener("click", handleSignUp);
     }
 
+<<<<<<< HEAD
     
+=======
+    // Display logged-in username in navbar (if applicable)
+    const loggedInUser = sessionStorage.getItem("loggedInUser");
+    const userNameDisplay = document.getElementById("user-name");
+    const userNameDisplay2 = document.querySelector(".user-modal-text");
+    if (loggedInUser && userNameDisplay) {
+        userNameDisplay.textContent = loggedInUser;
+        userNameDisplay2.textContent = loggedInUser;
+    }
+
+});
+>>>>>>> b54a18984e6769feaac7d50df0d35ebf8b6a6b8b
 
 
 
@@ -99,4 +112,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+<<<<<<< HEAD
 });
+=======
+document.addEventListener('click', (e) => {
+    toggleShowPassword();
+})
+
+function toggleShowPassword() {
+    const visibleIcon = document.getElementById('visible-icon');
+    const password = document.getElementById('password');
+
+    if (event.target === visibleIcon) {
+        if (password.type === 'password') {
+            password.type = 'text';
+            visibleIcon.src = '../Elements/hidden.png';
+        } else {
+            password.type = 'password';
+            visibleIcon.style.display = 'visible';
+            visibleIcon.src = '../Elements/visible.png';
+        }    
+    }
+    
+}
+
+>>>>>>> b54a18984e6769feaac7d50df0d35ebf8b6a6b8b

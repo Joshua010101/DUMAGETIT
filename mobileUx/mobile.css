@@ -644,15 +644,74 @@ p {
     width: 30px;
     height: 30px;
 }
-
+/*--------Slider----------*/
 .slider {
-    background-color: #0365fa;
+    position: relative;
     width: 100%;
-    height: 164px;
-    border-radius: 20px;
-    margin-bottom: 17px;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px; /* Optional: for rounded corners */
 }
 
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    position: relative; /* This makes the button position relative to the slide */
+    min-width: 100%;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column; /* Stack the image and button vertically */
+    justify-content: flex-end; /* Align items to the bottom */
+    height: 300px; /* Set a fixed height for the slide content */
+}
+
+.slide-image {
+    width: 100%; /* Ensure the image takes the full width */
+    height: 100%; /* Ensure the image takes the full height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 20px; /* Optional: for rounded corners */
+}
+
+.slide-button {
+    position: relative; /* Position the button relative to the slide content */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #0365fa; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none;
+    border-radius: 15px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Add some space between the image and button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.slide-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-buttons button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px
+}
 .sections {
     width: 100%;
     height: 77.014218009478672985781990521327%;
@@ -809,70 +868,31 @@ p {
     font-size: 12px;
     margin: 6px 0 0;
 }   
-
-.best-for-you label {
-    display: flex;
-    justify-content: space-between;  
-    font-family: sfprodisplay_bold;
-    font-size: 12px;
-    margin-bottom: 17px;
-}
-
-.best-section {
-    width: 100%;
-    height: auto;
-}
-
-.sectiongroup1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4.8px;
-}
-
-.sectiongroup2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section1 {
+/*Best for you Feature*/
+.section1, .section2, .section3, .section4 {
     background-color: #d9d9d9;
-    width: 49.358974358974358974358974358974%;
-    height: 114px;
+    width: 49%; /* Adjust width as needed */
+    height: 114px; /* Fixed height */
     border-radius: 15px;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width/height */
 }
 
-.section2 {
-    background-color: #d9d9d9;
-    width: 49.358974358974358974358974358974%;
-    height: 114px;
-    border-radius: 15px;
+.section-image {
+    width: 80%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
 }
 
-.section3 {
-    background-color: #d9d9d9;
-    width: 49.358974358974358974358974358974%;
-    height: 114px;
-    border-radius: 15px;
-}
-
-.section4 {
-    background-color: #d9d9d9;
-    width: 49.358974358974358974358974358974%;
-    height: 114px;
-    border-radius: 15px;
-}
-
-.best-for-you {
-    margin: 0;
-}
-
-.best-for-you label {
-    margin: 0;
-}
-
-.best-for-you p {
-    margin: 0;
-    margin-bottom: 17px;
+.section-title {
+    margin-top: 5px; /* Space between image and title */
+    font-family: sfprodisplay_regular; /* Use your desired font */
+    font-size: 14px; /* Adjust font size as needed */
+    text-align: center; /* Center the title text */
 }
 
 
@@ -934,7 +954,7 @@ footer.expanded {
     margin: 11px;
 }
 
-.food-section, .hotel-section, .tourist-spot-section, 
+.food-section, .hotel-section, .tourist-spot-section,.home-section, 
 .souvenirs-section, .contact-section {
     background-color: #d9d9d9;
     display: flex;

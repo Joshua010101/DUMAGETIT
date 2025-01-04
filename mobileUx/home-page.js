@@ -412,4 +412,36 @@ document.addEventListener("DOMContentLoaded", () => {
         hotelBookingForm.reset();
     });
 });
+//For Slide show shiiii
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    // Wrap around the slide index
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    // Move the slides
+    const offset = -currentSlide * 100; // Move the slides
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+}
+
+// Assign button functionality
+document.getElementById('prevBtn').addEventListener('click', function() {
+    showSlide(currentSlide - 1);
+});
+
+document.getElementById('nextBtn').addEventListener('click', function() {
+    showSlide(currentSlide + 1);
+});
+
+// Initialize the first slide
+showSlide(currentSlide);
 

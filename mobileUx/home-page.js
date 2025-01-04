@@ -306,35 +306,42 @@ window.addEventListener('scroll', () => {
 
 function lastContent () {
 
+    function onscroll () {
+        if (contentBase9.classList.contains('expanded') ) { 
+            contentBase9.classList.remove('expanded');
+            content9.classList.remove('expanded');
+            descriptionContainer9.classList.remove('expanded');
+            descriptionContainer9.scrollTop = 0;  
+
+            window.removeEventListener('scroll', onscroll );
+        }
+    }
+
     content9.addEventListener('click', () => {
-        const sectionContainer = document.querySelector('.section-container');
-        const content = document.querySelector('content');
+
         const footer = document.querySelector('.footer');
     
-        contentBase9.classList.add('expanded');
-        content9.classList.add('expanded');
-        descriptionContainer9.classList.add('expanded');
-    
-        if (content9.classList.contains('expanded')) {
-            sectionContainer.classList.add('expanded');
-            content.classList.add('expanded');
+        if (!content9.classList.contains('expanded')) {
             footer.classList.add('expanded');
-
+            contentBase9.classList.add('expanded');
+            content9.classList.add('expanded');
+            descriptionContainer9.classList.add('expanded');
+            window.scrollTo(0, 3888 );
         }
+        
+        console.log(content9, contentBase9, footer, descriptionContainer9);
+
+
+        setTimeout(function() {
+            window.addEventListener('scroll', onscroll);
+        }, 50)
+    
+
     });
 
     
     
-    window.addEventListener('scroll', () => {
-        if (contentBase9.classList.contains('expanded') ) {
-            contentBase9.classList.remove('expanded');
-            content9.classList.remove('expanded');
-            descriptionContainer9.classList.remove('expanded');
-            descriptionContainer9.scrollTop = 0;
-            footer.classList.remove('expanded');
-            
-        }
-    })
+    
 }
 
 
@@ -380,8 +387,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*------------Hotel Booking Modal stuff---------------*/
 document.addEventListener("DOMContentLoaded", () => {
+    const bookingModalWindow = document.querySelector("booking-modal");
     const hotelBookingModal = document.getElementById("hotel-booking-modal");
-    const closeHotelBookingModal = document.getElementById("close-hotel-booking-modal");
+    const bookingModal = document.getElementById("booking-modal");
+    const closeBtn = document.getElementById("back-arrow-hotel");
     const bookHotelButtons = document.querySelectorAll(".book-hotel-btn");
     const hotelBookingForm = document.getElementById("hotel-booking-form");
 
@@ -393,7 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close hotel booking modal
-    closeHotelBookingModal.addEventListener("click", () => {
+    closeBtn.addEventListener("click", () => {
         hotelBookingModal.classList.remove("visible");
     });
 
@@ -411,6 +420,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hotelBookingModal.classList.remove("visible");
         hotelBookingForm.reset();
     });
+<<<<<<< HEAD
 });
 //For Slide show shiiii
 let currentSlide = 0;
@@ -444,4 +454,12 @@ document.getElementById('nextBtn').addEventListener('click', function() {
 
 // Initialize the first slide
 showSlide(currentSlide);
+=======
+>>>>>>> ea09f82a0de1d803805e158a3360220b5f61c65c
 
+    bookingModalWindow.addEventListener("click", (event) => {
+        if (event.target === bookingModalWindow) {
+            bookingModalWindow.style.visibility = "hidden";
+        }
+    });
+});

@@ -146,6 +146,8 @@ p {
     flex-direction: column;
     margin: 0;
     gap: 5vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .login-container nav{
@@ -298,6 +300,8 @@ p {
     margin: 0;
     gap: 5vh;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .signup-container nav{
@@ -903,12 +907,11 @@ p {
 /*------------section pages----------*/
 
 footer {
-    height: 110px;
-    width: 100%;
+    
 }
 
 footer.expanded {
-    height: 110px;
+    height: 0;
     width: 100%;
 }
 
@@ -1059,6 +1062,19 @@ footer.expanded {
     color: white;
 }
 
+.description-container-1 button, .description-container-2 button,
+.description-container-3 button, .description-container-4 button,
+.description-container-5 button, .description-container-6 button, 
+.description-container-7 button , .description-container-8 button,
+.description-container-last button {
+    width: 50%;
+    height: 30px;
+    background-color: #0365fa;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
 
 .image-container-1.expanded, .image-container-2.expanded,
 .image-container-3.expanded, .image-container-4.expanded,
@@ -1163,22 +1179,55 @@ footer.expanded {
     cursor: pointer;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+.booking-full-name, .booking-phone-number, .booking-checkin-date, .booking-checkout-date, .room-type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+    gap: 10px;
 }
 
-input {
+.booking-check-dates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
+}
+
+#hotel-book-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: sfprodisplay_regular;
+}
+
+#room-type {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 8px;
+    font-family: sfprodisplay_regular;
+}
+
+#hotel-booking-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 20px;
+}
+
+#hotel-booking-form {
+    font-family: sfprodisplay_regular;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .book-now-btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0365fa;
     color: white;
     border: none;
     border-radius: 4px;
@@ -1210,25 +1259,32 @@ input {
 
 .hotel-booking-modal-content {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
+    box-sizing: border-box;
+}
+
+.hotel-booking-modal-content h2 {
+    margin: 50px 0;
+    text-align: center;
+    font-family: sfprodisplay_blackitalic;
 }
 
 .hotel-book-now-btn {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #0365fa;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .hotel-book-now-btn:hover {
-    background-color: #218838;
+    background-color: #0365fa
 }
 
 /*---------Contacts---------*/

@@ -81,7 +81,7 @@
                     <h3>Dive Into Paradise:Apo Island</h3>
                 
                 <p>Explore the pristine waters of Apo Island, renowned for its marine sanctuary. Swim with sea turtles and marvel at vibrant coral reefs in this ecological treasure. </p>
-               <button  class="book-tour-btn">Book Tour Guide</button>
+               <button  class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
                   
             </div>
@@ -94,7 +94,7 @@
                 <div class="description-container-2">
                     <h3>Find Serenity: Balinsasayao Twin Lakes</h3>
                 <p>Escape to the Balinsasayao Twin Lakes, a tranquil oasis for kayaking, hiking, or simply embracing nature’s peace.</p>
-                <button>Book Tour Guide</button>
+                <button class="book-hotel-btn">Book Tour Guide</button>
                 </div>
                  <!-- Ikaw bala sa design sa btn-->
               
@@ -108,7 +108,7 @@
             <div class="description-container-3">
                 <h3>A Splash of Adventure: Casaroro Falls</h3>
             <p>Unleash your adventurous side at Casaroro Falls, a breathtaking cascade hidden within a lush forest—perfect for trekkers.  </p>
-            <button>Book Tour Guide</button>
+            <button class="book-hotel-btn">Book Tour Guide</button>
             </div> <!-- Ikaw bala sa design sa btn-->    
         </div>
         </div>
@@ -121,7 +121,7 @@
                     <h3>Uncover History: Silliman University</h3>
                 <p>Step onto the historic grounds of Silliman University, Asia’s first American university, rich in heritage and culture.
                     </p>
-                    <button>Book Tour Guide</button>
+                    <button class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -133,7 +133,7 @@
                 <div class="description-container-5">
                     <h3>Hidden Wonders: Pulangbato Falls</h3>
                 <p>Be captivated by the unique red rock landscapes of Pulangbato Falls, an off-the-beaten-path gem.</p>
-                <button>Book Tour Guide</button>
+                <button class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -145,7 +145,7 @@
                 <div class="description-container-6">
                     <h3>Unwind in Elegance: Tierra Alta</h3>
                 <p>Relax at Tierra Alta, a mountain resort offering panoramic views of Dumaguete and luxurious amenities.</p>
-                <button>Book Tour Guide</button>
+                <button class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -170,7 +170,7 @@
                 <div class="description-container-8">
                     <h3>Relive the Legacy: Quezon Park</h3>
                 <p>Step into the heart of Dumaguete’s story at Quezon Park, where history comes alive. Serene fountain, and lush greenery, it’s a timeless sanctuary that bridges the past and present.</p>
-                <button>Book Tour Guide</button>
+                <button class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -182,7 +182,7 @@
                 <div class="description-container-last">
                     <h3>Celebrate Freedom: Ninoy Aquino Freedom Park</h3>
                 <p>Embrace the spirit of democracy at Ninoy Aquino Freedom Park, Dumaguete’s expansive green haven. Perfect for relaxation or recreation, it’s a hub for community events, quiet strolls, and a celebration of unity and resilience.</p>
-                <button>Book Tour Guide</button>
+                <button class="book-hotel-btn">Book Tour Guide</button>
                 </div> <!-- Ikaw bala sa design sa btn-->
             </div>
         </div>
@@ -193,16 +193,22 @@
         </footer>
     </div>
      <!-- Tourist Booking Modal -->
-     <div id="booking-modal" class="booking-modal hidden">
-        <div class="booking-modal-content">
-            <span class="close-btn" id="close-booking-modal">&times;</span>
+     <div id="hotel-booking-modal" class="booking-modal hidden">
+        <div class="hotel-booking-modal-content">
+            <img src="../Elements/back-arrow.png" class="back-arrow" id="back-arrow-hotel">
             <h2>Book Your Tour Guide</h2>
-            <form id="booking-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number" required>
-                <button type="submit" class="book-now-btn">Book Now</button>
+            <form id="hotel-booking-form">
+                <div class="booking-full-name">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="booking-phone-number">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="room-type">
+                    <button type="submit" class="hotel-book-now-btn">Book Now</button>
+                </div>
             </form>
         </div>
     </div>

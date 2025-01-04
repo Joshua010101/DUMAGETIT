@@ -387,8 +387,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*------------Hotel Booking Modal stuff---------------*/
 document.addEventListener("DOMContentLoaded", () => {
+    const bookingModalWindow = document.querySelector("booking-modal");
     const hotelBookingModal = document.getElementById("hotel-booking-modal");
-    const closeHotelBookingModal = document.getElementById("close-hotel-booking-modal");
+    const bookingModal = document.getElementById("booking-modal");
+    const closeBtn = document.getElementById("back-arrow-hotel");
     const bookHotelButtons = document.querySelectorAll(".book-hotel-btn");
     const hotelBookingForm = document.getElementById("hotel-booking-form");
 
@@ -400,7 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close hotel booking modal
-    closeHotelBookingModal.addEventListener("click", () => {
+    closeBtn.addEventListener("click", () => {
         hotelBookingModal.classList.remove("visible");
     });
 
@@ -418,5 +420,10 @@ document.addEventListener("DOMContentLoaded", () => {
         hotelBookingModal.classList.remove("visible");
         hotelBookingForm.reset();
     });
-});
 
+    bookingModalWindow.addEventListener("click", (event) => {
+        if (event.target === bookingModalWindow) {
+            bookingModalWindow.style.visibility = "hidden";
+        }
+    });
+});

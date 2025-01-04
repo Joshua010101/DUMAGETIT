@@ -420,7 +420,6 @@ document.addEventListener("DOMContentLoaded", () => {
         hotelBookingModal.classList.remove("visible");
         hotelBookingForm.reset();
     });
-<<<<<<< HEAD
 });
 //For Slide show shiiii
 let currentSlide = 0;

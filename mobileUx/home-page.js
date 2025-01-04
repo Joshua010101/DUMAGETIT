@@ -350,4 +350,73 @@ function lastContent () {
 
 }
 
+/*------------Booking Modal stuff---------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const bookingModal = document.getElementById("booking-modal");
+    const closeBookingModal = document.getElementById("close-booking-modal");
+    const bookTourButtons = document.querySelectorAll(".book-tour-btn");
+    const bookingForm = document.getElementById("booking-form");
+
+    // Show booking modal on "Book Tour Guide" button click
+    bookTourButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            bookingModal.classList.add("visible");
+        });
+    });
+
+    // Close booking modal
+    closeBookingModal.addEventListener("click", () => {
+        bookingModal.classList.remove("visible");
+    });
+
+    // Close booking modal when clicking outside content
+    bookingModal.addEventListener("click", (event) => {
+        if (event.target === bookingModal) {
+            bookingModal.classList.remove("visible");
+        }
+    });
+
+    // Handle booking form submission
+    bookingForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Thank you for booking a tour guide! You will receive a call soon. For inquiries, contact us.");
+        bookingModal.classList.remove("visible");
+        bookingForm.reset();
+    });
+});
+
+/*------------Hotel Booking Modal stuff---------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const hotelBookingModal = document.getElementById("hotel-booking-modal");
+    const closeHotelBookingModal = document.getElementById("close-hotel-booking-modal");
+    const bookHotelButtons = document.querySelectorAll(".book-hotel-btn");
+    const hotelBookingForm = document.getElementById("hotel-booking-form");
+
+    // Show hotel booking modal on "Book Hotel Room" button click
+    bookHotelButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            hotelBookingModal.classList.add("visible");
+        });
+    });
+
+    // Close hotel booking modal
+    closeHotelBookingModal.addEventListener("click", () => {
+        hotelBookingModal.classList.remove("visible");
+    });
+
+    // Close hotel booking modal when clicking outside content
+    hotelBookingModal.addEventListener("click", (event) => {
+        if (event.target === hotelBookingModal) {
+            hotelBookingModal.classList.remove("visible");
+        }
+    });
+
+    // Handle hotel booking form submission
+    hotelBookingForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Thank you for booking your hotel! You will receive a confirmation soon.");
+        hotelBookingModal.classList.remove("visible");
+        hotelBookingForm.reset();
+    });
+});
 

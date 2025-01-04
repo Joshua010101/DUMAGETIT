@@ -673,6 +673,7 @@ p {
     flex-direction: column; /* Stack the image and button vertically */
     justify-content: flex-end; /* Align items to the bottom */
     height: 300px; /* Set a fixed height for the slide content */
+    position: relative; /* Ensure the content is positioned relative for absolute positioning of the button */
 }
 
 .slide-image {
@@ -683,20 +684,22 @@ p {
 }
 
 .slide-button {
-    position: relative; /* Position the button relative to the slide content */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    color: #0365fa; /* Text color */
-    padding: 10px 20px; /* Padding for the button */
+    position: absolute; /* Position the button absolutely within the slide content */
+    bottom: 20px; /* Space from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center the button */
+    background-color: #0365fa; /* Blue background */
+    color: white; /* Text color */
+    padding: 10px 30px; /* Padding for the button */
     border: none;
-    border-radius: 15px; /* Rounded corners for the button */
+    border-radius: 50px; /* Make the button oval */
     text-decoration: none; /* Remove underline from link */
     font-size: 16px; /* Font size */
-    margin-top: 10px; /* Add some space between the image and button */
     transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 .slide-button:hover {
-    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+    background-color: #025bb5; /* Darker blue on hover */
 }
 
 .slider-buttons {
@@ -706,15 +709,32 @@ p {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+   
 }
 
 .slider-buttons button {
     background-color: rgba(255, 255, 255, 0.7);
     border: none;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 18px
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height equal to width */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 18px; /* Font size */
+    display: flex; /* Use flexbox to center the icon/text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s; /* Transition for hover effect */
+   
+}
+.slider-buttons button:first-child {
+    margin-left: 5px; /* Remove left margin for the first button */
+}
+
+.slider-buttons button:last-child {
+    margin-right: 5px; /* Remove right margin for the last button */
+}
+.slider-buttons button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
 }
 .sections {
     width: 100%;

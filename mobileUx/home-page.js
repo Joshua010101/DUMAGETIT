@@ -420,7 +420,6 @@ document.addEventListener("DOMContentLoaded", () => {
         hotelBookingModal.classList.remove("visible");
         hotelBookingForm.reset();
     });
-<<<<<<< HEAD
 });
 //For Slide show shiiii
 let currentSlide = 0;
@@ -454,12 +453,10 @@ document.getElementById('nextBtn').addEventListener('click', function() {
 
 // Initialize the first slide
 showSlide(currentSlide);
-=======
->>>>>>> ea09f82a0de1d803805e158a3360220b5f61c65c
 
     bookingModalWindow.addEventListener("click", (event) => {
         if (event.target === bookingModalWindow) {
             bookingModalWindow.style.visibility = "hidden";
         }
     });
-});
+

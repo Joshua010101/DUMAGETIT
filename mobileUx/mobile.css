@@ -1004,8 +1004,9 @@ footer.expanded {
 .home-section-pages {
     display: flex;
     gap: 10px;
-    height: 25px;
+    height: 34.8px;
     margin-bottom: 20px;
+    overflow-y: scroll;
 }
 
 .home-section-pages a{
@@ -1023,7 +1024,7 @@ footer.expanded {
     margin: 11px;
 }
 
-.food-section, .hotel-section, .tourist-spot-section,.home-section, 
+.food-section, .hotel-section, .tourist-spot-section, .home-section, 
 .souvenirs-section, .contact-section {
     background-color: #d9d9d9;
     display: flex;
@@ -1031,7 +1032,9 @@ footer.expanded {
     border-radius: 20px;
 }
 
-.food-section {
+
+
+.home-section {
     margin-left: 10px;
 }
 
@@ -1045,6 +1048,7 @@ footer.expanded {
 
 .contact-section {
     margin-right: 10px;
+    width: 64px;
 }
 
 .content {
@@ -1378,6 +1382,15 @@ footer.expanded {
 
 .inquiries-body h1 {
     text-align: center;
+}
+
+.contact-info {
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.contact-info p {
+    font-family: sfprodisplay_regular;
 }
 
 .contact-info li {

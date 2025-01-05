@@ -530,7 +530,10 @@ p {
     border-radius: 15px;
     margin: 20px 20px 0 0;
     gap: 30px;
+    
 }
+
+
 
 .user-modal hr {
     border: none;
@@ -554,6 +557,7 @@ p {
 #signout-button  {
     background-color: #0365fa;
     border: none;
+    max-width: 125px;
     width: 80%;
     height: 30px;
     border-radius: 15px;
@@ -1038,6 +1042,7 @@ footer.expanded {
     height: 390px;
     display: flex;
     justify-content: center;
+    transition: height 0.5s ease;
 }
 
 .content-1, .content-2, .content-3, .content-4,
@@ -1052,6 +1057,7 @@ footer.expanded {
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+    transition: height 0.5s ease;
 }
 
 .content-base-1.expanded, .content-1.expanded,
@@ -1072,6 +1078,7 @@ footer.expanded {
 .content-7.expanded, .content-8.expanded,
 .content-last.expanded {
     display: flex;
+    
 }
 
 .description-container-1.expanded, .description-container-2.expanded,
@@ -1084,7 +1091,7 @@ footer.expanded {
     position: absolute;
     overflow: scroll;;
     border-radius: 10px 10px 0 0;
-    width: 100%;
+    width: 97.1%;
 }
 
 .description-container-1.expanded button, .description-container-2.expanded button,
@@ -1092,7 +1099,7 @@ footer.expanded {
 .description-container-5.expanded button, .description-container-6.expanded button, 
 .description-container-7.expanded button, .description-container-8.expanded button, 
 .description-container-last.expanded button{
-    width: 50%;
+    width: 30%;
     height: 30px;
     background-color: #0365fa;
     border: none;
@@ -1105,7 +1112,7 @@ footer.expanded {
 .description-container-5 button, .description-container-6 button, 
 .description-container-7 button , .description-container-8 button,
 .description-container-last button {
-    width: 50%;
+    width: 30%;
     height: 30px;
     background-color: #0365fa;
     border: none;
@@ -1176,7 +1183,7 @@ footer.expanded {
     margin: 0 10px 10px;
     padding: 0 10px 10px;
     overflow: hidden;
-    box-sizing: border-box;
+    transition: height 0.5s ease;
 }
 /* Booking Modal styling */
 .booking-modal {

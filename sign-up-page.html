@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUMAGETIT</title>
+    <link rel="icon" href="../Elements/dumagetit logo.png" type="image/png">
+    <link rel="stylesheet" href="../mobileUx/mobile.css" type="text/css">
+    <script src="../mobileUx/mobile.js" defer ></script>
+</head>
+<body class="signup-container">
+        <nav class="nav-bar">
+            <img src="../Elements/dumagetit logo.png" alt="Dumagetit logo" id="navbar-logo">
+            <img src="../Elements/menu.png" alt="Menu icon" id="menu-icon">
+        </nav>
+        <div class="login-header">
+            <h1 class="sign">Sign</h1>
+            <h1 class="up">Up</h1>
+        </div>
+        <div class="login-body" id="signup-body">
+            <form action="home-page.html" class="login-form">
+                <a href="login-signup-page.html"><img src="../Elements/back-arrow.png" class="back-arrow" alt="back-arrow"></a>
+                <div class="username-input">
+                    <label for="username" class="username"><p>Username</p></label>
+                    <div class="username-fieldset">
+                        <img src="../Elements/user.png" alt="user icon" class="user-icon">
+                        <input 
+                            type="text" 
+                            name="username" 
+                            id="username" 
+                            minlength="4"
+                            title="Username must contain at least 4 characters, including at least one uppercase letter, one lowercase letter, and one number."
+                            required>
+                    </div>
+                </div>
+                <div class="email-input">
+                    <label for="email" class="email"><p>Email</p></label>
+                    <div class="email-fieldset">
+                        <img src="../Elements/mail.png" alt="mail icon" class="mail-icon">
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="password-input">
+                    <label for="password" class="password"><p>Password</p></label>
+                    <div class="password-fieldset">
+                        <div class="password-icons">
+                            <img src="../Elements/door-key.png" alt="key icon" class="key-icon">
+                        <div class="password-fieldset-icon">
+                            <img src="../Elements/visible.png" alt="visible icon" id="visible-icon">
+                        </div>
+                        </div>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="password" 
+                            minlength="8"
+                            title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character."
+                            pattern="[0-9A-Za-z\d@$!%*?&]{8,}"
+                            required>
+                    </div>
+                </div>
+                <div class="terms-condition-link">
+                    <input type="checkbox" name="terms-condition" id="terms-condition-checkbox" required >
+                    <p>Accept<a href="" class="terms-condition">Terms and Condition</a></p>
+                </div>
+                <button type="button" class="signup-button">Sign Up</button>
+                <hr>
+            </form>
+            <div class="sign-up-link">
+                <p>Already have a account? <a href="login-page.html">Log In</a></p>
+            </div>
+        </div>
+        <div class="window">
+            <div class="modal">
+                <div class="close-btn">
+                    <img src="../Elements/close.png" alt="close icon">
+                </div>
+                <div class="modal-content">
+                    <div class="modal-terms">
+                        <h3> Terms and Conditions for DumaGetIt App</h3>
+                        <p>Welcome to DumaGetIt, an app dedicated to promoting the rich tourism, local brands, and cultural heritage of Dumaguete City. By using the app, you agree to these terms and conditions. </p>
+
+                        <ol>
+                        <li><h3>Business Purpose</li></h3>
+                        <p>DumaGetIt serves as a platform to showcase Dumaguete’s finest local brands, attractions, and experiences. Our mission is to connect guests with authentic local businesses, promote eco-tourism, and create unforgettable memories while staying in Dumaguete. </p>
+
+                        <li><h3>Use of the App</li></h3>
+                        <p><strong>Permitted Use</strong>: Users can explore local attractions, discover recommended establishments, and access curated itineraries. </p>
+                        <p><strong>Prohibited Use</strong>: Any misuse of the platform to harm the reputation of featured businesses or exploit proprietary information is strictly forbidden. </p>
+
+                        <li><h3>User-Generated Content</li></h3>
+                        <p><strong>Ownership</strong>: You retain ownership of any content you share but grant DumaGetIt permission to use it for promotional and marketing purposes. </p>
+                        <p><strong>Accuracy</strong>: Users are encouraged to provide honest reviews and ensure their contributions reflect their actual experiences. </p>
+
+                        <li><h3>Promotions and Collaborations</li></h3>
+                        <p><strong>Support for Local Brands</strong>: DumaGetIt collaborates with verified local businesses to highlight their services and products, offering exclusive deals for app users. </p>
+                        <p><strong>Attractions and Experiences</strong>: Featured sites are carefully selected to ensure guests experience the best Dumaguete has to offer. </p>
+
+                        <li><h3>Intellectual Property</li></h3>
+                        <p>All content related to Dumaguete’s attractions and brands showcased on the app is protected by intellectual property rights owned or licensed by DumaGetIt. </p>
+
+                        <li><h3>Governing Law</li></h3>
+                        <p>These terms are governed by the laws of the Philippines. Any disputes will be resolved in Dumaguete City. </p>
+
+                        <li><h3>Contact Information</li></h3>
+                        <p>For inquiries or support, reach us at:
+                        Email: [Insert Email]
+                        Phone: [Insert Phone Number] </p>
+                        </ol>
+                        <p>By using DumaGetIt, you acknowledge and agree to these terms, which uphold our commitment to promoting Dumaguete’s local charm and enriching guest experiences. </p>
+
+                        
+ 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="checkbox" name="terms-condition" id="modal-checkbox" required >
+                    <p>Accept <strong>Terms and Condition</strong></p>
+                </div>
+                <button class="accept-button">Accept</button>    
+            </div>
+        </div>
+</body>
+</html>

@@ -169,6 +169,7 @@ p {
     font-size: 50px;
 }
 
+
 .login-body {
     position: relative;
     height: 72.345971563981042654028436018957vh;
@@ -217,6 +218,16 @@ p {
     width: 100%;
 }
 
+.username-fieldset, .password-fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.password-fieldset {
+    position: relative;
+}
+
 .username-fieldset img {
     position: absolute;
     width: 20px;
@@ -232,13 +243,9 @@ p {
     padding: 10px;
 }
 
-.password-fieldset-icon {
-    display: flex;
-    justify-content: end;
-}
-
-#visibile-icon {
+#visible-icon {
     display: visible;
+    right: 0;
 }
 
 #invisible-icon {
@@ -251,8 +258,8 @@ p {
 
 .username-input input, .password-input input {
     width: 100%;
-    height: 40px;
-    border-radius: 15px;
+    height: 4.7393364928909952606635071090047vh;
+    border-radius: 20px;
     border: none;
     padding: 0;
 }
@@ -261,13 +268,13 @@ p {
 .login-button {
     background-color: #0365fa;
     border: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     height: 40px;
     color: #ffffff;
     font-size: 15px;
     font-family: sfprodisplay_bold;
-    margin: 32px 0;
+    box-sizing: border-box;
 }
 
 .login-form hr {
@@ -275,6 +282,11 @@ p {
     height: 1px;
     width: 100%;
     background-color: #9c9c9c;
+}
+
+.login-form {
+    max-width: 500px;
+
 }
 
 /*------------------*/
@@ -392,11 +404,12 @@ p {
 
 .close-btn {
     display: flex;
+    position: fixed;
     justify-content: end;
     margin-bottom: 20px;
 }
 
-.modal-content img {
+.close-btn img {
     width: 20px;
     height: 20px;
 }
@@ -404,7 +417,7 @@ p {
 .modal-terms {
     padding: 0 20px 0 20px;
     overflow-y: scroll;
-    height: 90%;
+    height: 100%;
 }
 
 .modal-terms p {
@@ -504,7 +517,10 @@ p {
     border-radius: 15px;
     margin: 20px 20px 0 0;
     gap: 30px;
+    
 }
+
+
 
 .user-modal hr {
     border: none;
@@ -528,6 +544,7 @@ p {
 #signout-button  {
     background-color: #0365fa;
     border: none;
+    max-width: 125px;
     width: 80%;
     height: 30px;
     border-radius: 15px;
@@ -1058,6 +1075,7 @@ footer.expanded {
     height: 390px;
     display: flex;
     justify-content: center;
+    transition: height 0.5s ease;
 }
 
 .content-1, .content-2, .content-3, .content-4,
@@ -1072,6 +1090,7 @@ footer.expanded {
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+    transition: height 0.5s ease;
 }
 
 .content-base-1.expanded, .content-1.expanded,
@@ -1092,6 +1111,7 @@ footer.expanded {
 .content-7.expanded, .content-8.expanded,
 .content-last.expanded {
     display: flex;
+    
 }
 
 .description-container-1.expanded, .description-container-2.expanded,
@@ -1104,6 +1124,7 @@ footer.expanded {
     position: absolute;
     overflow: scroll;;
     border-radius: 10px 10px 0 0;
+    width: 97.1%;
 }
 
 .description-container-1.expanded button, .description-container-2.expanded button,
@@ -1111,7 +1132,7 @@ footer.expanded {
 .description-container-5.expanded button, .description-container-6.expanded button, 
 .description-container-7.expanded button, .description-container-8.expanded button, 
 .description-container-last.expanded button{
-    width: 50%;
+    width: 30%;
     height: 30px;
     background-color: #0365fa;
     border: none;
@@ -1124,7 +1145,7 @@ footer.expanded {
 .description-container-5 button, .description-container-6 button, 
 .description-container-7 button , .description-container-8 button,
 .description-container-last button {
-    width: 50%;
+    width: 30%;
     height: 30px;
     background-color: #0365fa;
     border: none;
@@ -1195,7 +1216,7 @@ footer.expanded {
     margin: 0 10px 10px;
     padding: 0 10px 10px;
     overflow: hidden;
-    box-sizing: border-box;
+    transition: height 0.5s ease;
 }
 /* Booking Modal styling */
 .booking-modal {
@@ -1455,6 +1476,7 @@ footer.expanded {
 }
 
 /*----------------------------*/
+<<<<<<< HEAD
 /* Modal forgot password styles */
 /* Modal General Styling */
 
@@ -1556,3 +1578,136 @@ footer.expanded {
         font-size: 14px;
     }
 }
+=======
+
+@media (min-width: 1024px) {
+    /*Sign up*/
+
+    .modal {
+        height: 500px;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    /*----*/
+}
+
+@media (min-width: 1440px) {
+    .login-body {
+        height: 100vh;
+    }
+    .login-body::before {
+        border-radius: 30px 30px 0 0;
+    }
+    .back-arrow {
+        width: 1.589vw;
+    }
+
+    .username-input input, .password-input input, .email-input input {
+        border-radius: 30px;
+    }
+
+    #user-icon, #key-icon, #visible-icon {
+        width: 1.80vw;
+        height: 1.80vw;
+    }
+
+    .login-button {
+        height: 4.741vh;
+        border-radius: 30px;
+    }
+
+    .login-header h1 {
+        font-size: 4.741rem;
+        margin: 0;
+    }
+
+    /*Sign up*/
+    
+    .modal {
+        height: 500px;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .signup-body {
+        all: unset;
+    }
+
+    .close-btn {
+        right: 40px;
+        top: 40px;
+    }
+
+    /*----*/
+
+    /*search*/
+
+    #search {
+        height: 50px;
+        border-radius: 30px;
+        padding-left: 48px
+    }
+
+    #ellipse-search-icon {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin-left: 6px;
+    }
+    
+    #search-icon {
+        margin-left: 6px;
+    }
+
+
+
+    /*--*/
+
+    /*section*/
+
+    .home-section-pages {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-section-pages a div {
+        height: 40px;
+        width: 15vw;
+    }
+
+    .home-section-pages a div p {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*---*/
+
+    /*content*/
+
+
+    /*--*/
+
+    /*inquiries*/
+
+    .inquiries-body {
+        width: 30%;
+    }
+
+    #partner-submit-button {
+        width: 20%;
+    }
+
+    /*--*/
+
+}
+>>>>>>> 711e437af34a0031f761c1d249df385c4db0c98a

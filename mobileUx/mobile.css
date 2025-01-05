@@ -786,6 +786,10 @@ p {
     width: 30vw;
 }
 
+.food-container p, .hotel-container p, .tourist-spot-container p, .souvenirs-container p, .contact-container p {
+    text-align: center;
+}
+
 .food-container {
     width: 90px;
     height: 110px;

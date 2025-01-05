@@ -128,3 +128,62 @@ function toggleShowPassword() {
     }
     
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const forgotPasswordText = document.getElementById('forgotPasswordText'); // The "Forgot Password?" text
+    const forgotPasswordModal = document.getElementById('forgotPasswordModal'); // The modal
+    const closeForgotPasswordModal = document.getElementById('closeForgotPasswordModal');
+    const submitResetPassword = document.getElementById('submitResetPassword');
+
+    // Show modal when clicking the "Forgot Password?" text
+    forgotPasswordText.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default action (if any)
+        forgotPasswordModal.style.display = 'flex'; // Show modal using Flexbox (centered)
+    });
+
+    // Hide modal when clicking the close button
+    closeForgotPasswordModal.addEventListener('click', () => {
+        forgotPasswordModal.style.display = 'none'; // Hide modal
+    });
+
+    // Hide modal when clicking outside the modal content
+    forgotPasswordModal.addEventListener('click', (e) => {
+        if (e.target === forgotPasswordModal) {
+            forgotPasswordModal.style.display = 'none'; // Hide modal
+        }
+    });
+
+    // Handle password reset
+    submitResetPassword.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent form submission
+
+        const email = document.getElementById('resetEmail').value.trim();
+        const newPassword = document.getElementById('newPassword').value.trim();
+        const confirmPassword = document.getElementById('confirmPassword').value.trim();
+
+        if (!email || !newPassword || !confirmPassword) {
+            alert('Please fill out all fields.');
+            return;
+        }
+
+        if (newPassword !== confirmPassword) {
+            alert('Passwords do not match. Please try again.');
+            return;
+        }
+
+        // Check if email exists in localStorage
+        const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+        const user = accounts.find((acc) => acc.email === email);
+
+        if (!user) {
+            alert('Email not found. Please try again.');
+            return;
+        }
+
+        // Update password
+        user.password = newPassword;
+        localStorage.setItem('accounts', JSON.stringify(accounts));
+
+        alert('Password reset successful! You can now log in with your new password.');
+        forgotPasswordModal.style.display = 'none'; // Hide modal
+    });
+});

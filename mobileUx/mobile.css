@@ -257,19 +257,6 @@ p {
     padding: 0;
 }
 
-.forgot-password-link {
-    text-align: end;
-}
-
-.forgot-password {
-    color: #0365fa;
-    text-decoration: none;
-}
-
-.forgot-password p {
-    margin: 0;
-    padding: 0;
-}
 
 .login-button {
     background-color: #0365fa;
@@ -373,7 +360,7 @@ p {
     color: #0365fa;
 }
 
-/* -------MODAL---------- */
+/* ----------------- */
 
 .window {
    height: 100%;
@@ -1468,3 +1455,104 @@ footer.expanded {
 }
 
 /*----------------------------*/
+/* Modal forgot password styles */
+/* Modal General Styling */
+
+/* Style for the modal backdrop */
+.forgot-password-modal {
+    display: none; /* Initially hide the modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center; /* Align modal horizontally in the center */
+    align-items: center; /* Align modal vertically in the center */
+    z-index: 1000;
+}
+
+/* Style for the modal content */
+.forgot-password-modal .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Forgot Password Text */
+.forgot-password-text {
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.forgot-password-text:hover {
+    color: #0056b3;
+}
+
+/* Input Box Styling */
+.forgot-password-modal input[type="email"],
+.forgot-password-modal input[type="password"] {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Modal Header */
+.modal-header h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Modal Body */
+.modal-body p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Modal Footer */
+.modal-footer button {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-footer button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .forgot-password-modal .modal-content {
+        padding: 15px;
+    }
+
+    .forgot-password-modal input[type="email"],
+    .forgot-password-modal input[type="password"],
+    .modal-footer button {
+        font-size: 14px;
+    }
+}

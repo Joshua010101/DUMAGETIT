@@ -38,8 +38,9 @@
                     </div>
                 </div>
                 <div class="forgot-password-link">
-                    <a href="" class="forgot-password"><p>Forgot Password?</p></a>
+                    <span id="forgotPasswordText" class="forgot-password-text">Forgot Password?</span>
                 </div>
+                
                 <button type="button" class="login-button">Log In</button>
                 <hr>
             </form>
@@ -47,5 +48,26 @@
                 <p>Don't have a account? <a href="sign-up-page.html">Sign up</a></p>
             </div>
         </div>
+       <!-- Modal for Forgot Password -->
+       <div class="forgot-password-modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Forgot Password</h2>
+                <span class="close" id="closeForgotPasswordModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Enter your email to reset your password:</p>
+                <input type="email" id="resetEmail" placeholder="Email Address" required>
+                <p>Enter your new password:</p>
+                <input type="password" id="newPassword" placeholder="New Password" required>
+                <p>Confirm your new password:</p>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <div class="modal-footer">
+                <button id="submitResetPassword">Reset Password</button>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

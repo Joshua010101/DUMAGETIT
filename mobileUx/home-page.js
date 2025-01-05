@@ -459,4 +459,6 @@ showSlide(currentSlide);
             bookingModalWindow.style.visibility = "hidden";
         }
     });
+    
+    
 

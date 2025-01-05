@@ -133,6 +133,10 @@ p {
     color: #ffffff;
 }
 
+.login-signup-buttons button:hover {
+    background-color: #0056b3;
+}
+
 .login-signup-login-button, .login-signup-signup-button {
     font-family: sfprodisplay_bold;
 }
@@ -248,6 +252,10 @@ p {
     right: 0;
 }
 
+#visible-icon:hover {
+    cursor: pointer;
+}
+
 #invisible-icon {
     display: none;
 }
@@ -277,6 +285,11 @@ p {
     box-sizing: border-box;
 }
 
+.login-button:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
 .login-form hr {
     border: none;
     height: 1px;
@@ -286,7 +299,10 @@ p {
 
 .login-form {
     max-width: 500px;
+}
 
+.sign-up-link a:hover {
+    color: #0056b3;
 }
 
 /*------------------*/
@@ -552,6 +568,11 @@ p {
     color: white;
 }
 
+#signout-button:hover  {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
 .user-menu-container {
     position: relative;
     background-color: #d9d9d9;
@@ -568,6 +589,10 @@ p {
     align-items: center;
     justify-content: space-around; 
     gap: 6px;
+}
+
+.user-menu:hover {
+    cursor: pointer;
 }
 
 .user-icon {
@@ -1036,6 +1061,11 @@ footer.expanded {
     border-radius: 20px;
 }
 
+.food-section:hover, .hotel-section:hover, .tourist-spot-section:hover, .home-section:hover, 
+.souvenirs-section:hover, .contact-section:hover {
+   background-color: #9c9c9c;
+}
+
 
 
 .home-section {
@@ -1138,6 +1168,15 @@ footer.expanded {
     border: none;
     border-radius: 15px;
     color: white;
+}
+
+.description-container-1.expanded button:hover, .description-container-2.expanded button:hover,
+.description-container-3.expanded button:hover, .description-container-4.expanded button:hover, 
+.description-container-5.expanded button:hover, .description-container-6.expanded button:hover, 
+.description-container-7.expanded button:hover, .description-container-8.expanded button:hover, 
+.description-container-last.expanded button:hover {
+    cursor: pointer;
+    background-color: #0056b3;
 }
 
 .description-container-1 button, .description-container-2 button,
@@ -1418,6 +1457,11 @@ footer.expanded {
     padding: 0;
 }
 
+#partner-button:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
 .partner-link {
     text-decoration: none;
     color: #fff;
@@ -1475,11 +1519,27 @@ footer.expanded {
         padding: 0;
 }
 
+#partner-submit-button:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
 /*----------------------------*/
 /* Modal forgot password styles */
 /* Modal General Styling */
 
 /* Style for the modal backdrop */
+.forgot-password-link {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+
+.forgot-password-link span {
+    text-decoration: none;
+    font-family: sfprodisplay_regular;
+}
+
 .forgot-password-modal {
     display: none; /* Initially hide the modal */
     position: fixed;
@@ -1491,6 +1551,17 @@ footer.expanded {
     justify-content: center; /* Align modal horizontally in the center */
     align-items: center; /* Align modal vertically in the center */
     z-index: 1000;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#forgot-modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /* Style for the modal content */
@@ -1537,12 +1608,44 @@ footer.expanded {
     margin-bottom: 10px;
 }
 
+.modal-header img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-header div {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
 /* Modal Body */
+
+#forgot-modal-content {
+    border-radius: 20px;
+}
+
+#forgot-modal-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#forgot-modal-content .modal-body input {
+    border-radius: 20px;
+}
+
 .modal-body p {
-    font-size: 14px;
     color: #666;
     margin: 10px 0 5px;
     text-align: left;
+}
+
+.modal-footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* Modal Footer */
@@ -1550,11 +1653,11 @@ footer.expanded {
     width: 90%;
     max-width: 350px;
     padding: 12px;
-    margin-top: 15px;
+    margin: 0;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;

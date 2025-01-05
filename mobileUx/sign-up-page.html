@@ -19,7 +19,7 @@
             <h1 class="sign">Sign</h1>
             <h1 class="up">Up</h1>
         </div>
-        <div class="login-body">
+        <div class="login-body" id="signup-body">
             <form action="home-page.html" class="login-form">
                 <a href="login-signup-page.html"><img src="../Elements/back-arrow.png" class="back-arrow" alt="back-arrow"></a>
                 <div class="username-input">
@@ -45,9 +45,11 @@
                 <div class="password-input">
                     <label for="password" class="password"><p>Password</p></label>
                     <div class="password-fieldset">
-                        <img src="../Elements/door-key.png" alt="key icon" class="key-icon">
+                        <div class="password-icons">
+                            <img src="../Elements/door-key.png" alt="key icon" class="key-icon">
                         <div class="password-fieldset-icon">
                             <img src="../Elements/visible.png" alt="visible icon" id="visible-icon">
+                        </div>
                         </div>
                         <input 
                             type="password" 
@@ -72,10 +74,10 @@
         </div>
         <div class="window">
             <div class="modal">
+                <div class="close-btn">
+                    <img src="../Elements/close.png" alt="close icon">
+                </div>
                 <div class="modal-content">
-                    <div class="close-btn">
-                        <img src="../Elements/close.png" alt="close icon">
-                    </div>
                     <div class="modal-terms">
                         <h3> Terms and Conditions for DumaGetIt App</h3>
                         <p>Welcome to DumaGetIt, an app dedicated to promoting the rich tourism, local brands, and cultural heritage of Dumaguete City. By using the app, you agree to these terms and conditions. </p>

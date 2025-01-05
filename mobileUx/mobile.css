@@ -169,6 +169,7 @@ p {
     font-size: 50px;
 }
 
+
 .login-body {
     position: relative;
     height: 72.345971563981042654028436018957vh;
@@ -217,6 +218,16 @@ p {
     width: 100%;
 }
 
+.username-fieldset, .password-fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.password-fieldset {
+    position: relative;
+}
+
 .username-fieldset img {
     position: absolute;
     width: 20px;
@@ -232,13 +243,9 @@ p {
     padding: 10px;
 }
 
-.password-fieldset-icon {
-    display: flex;
-    justify-content: end;
-}
-
-#visibile-icon {
+#visible-icon {
     display: visible;
+    right: 0;
 }
 
 #invisible-icon {
@@ -251,8 +258,8 @@ p {
 
 .username-input input, .password-input input {
     width: 100%;
-    height: 40px;
-    border-radius: 15px;
+    height: 4.7393364928909952606635071090047vh;
+    border-radius: 20px;
     border: none;
     padding: 0;
 }
@@ -274,13 +281,13 @@ p {
 .login-button {
     background-color: #0365fa;
     border: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     height: 40px;
     color: #ffffff;
     font-size: 15px;
     font-family: sfprodisplay_bold;
-    margin: 32px 0;
+    box-sizing: border-box;
 }
 
 .login-form hr {
@@ -288,6 +295,11 @@ p {
     height: 1px;
     width: 100%;
     background-color: #9c9c9c;
+}
+
+.login-form {
+    max-width: 500px;
+
 }
 
 /*------------------*/
@@ -405,11 +417,12 @@ p {
 
 .close-btn {
     display: flex;
+    position: fixed;
     justify-content: end;
     margin-bottom: 20px;
 }
 
-.modal-content img {
+.close-btn img {
     width: 20px;
     height: 20px;
 }
@@ -417,7 +430,7 @@ p {
 .modal-terms {
     padding: 0 20px 0 20px;
     overflow-y: scroll;
-    height: 90%;
+    height: 100%;
 }
 
 .modal-terms p {
@@ -1468,3 +1481,73 @@ footer.expanded {
 }
 
 /*----------------------------*/
+
+@media (min-width: 1024px) {
+    /*Sign up*/
+
+    .modal {
+        height: 500px;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    /*----*/
+}
+
+@media (min-width: 1440px) {
+    .login-body {
+        height: 100vh;
+    }
+    .login-body::before {
+        border-radius: 30px 30px 0 0;
+    }
+    .back-arrow {
+        width: 1.589vw;
+    }
+
+    .username-input input, .password-input input, .email-input input {
+        border-radius: 30px;
+    }
+
+    #user-icon, #key-icon, #visible-icon {
+        width: 1.80vw;
+        height: 1.80vw;
+    }
+
+    .login-button {
+        height: 4.741vh;
+        border-radius: 30px;
+    }
+
+    .login-header h1 {
+        font-size: 4.741rem;
+        margin: 0;
+    }
+
+    /*Sign up*/
+    
+    .modal {
+        height: 500px;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .signup-body {
+        all: unset;
+    }
+
+    .close-btn {
+        right: 40px;
+        top: 40px;
+    }
+
+    /*----*/
+
+}

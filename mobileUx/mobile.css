@@ -1022,10 +1022,6 @@ p {
 
 /*------------section pages----------*/
 
-footer {
-    
-}
-
 footer.expanded {
     height: 0;
     width: 100%;
@@ -1499,10 +1495,6 @@ footer.expanded {
 /*--------------------*/
 
 /*-------partner with us-------*/
-
-.navbar-form {
-    
-}
 
 .navbar-form img {
     width: 20px;

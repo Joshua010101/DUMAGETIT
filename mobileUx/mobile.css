@@ -705,6 +705,11 @@ p {
     position: relative; /* Ensure the content is positioned relative for absolute positioning of the button */
 }
 
+.slide-content a {
+    font-family: sfprodisplay_regular;
+}
+
+
 .slide-image {
     width: 100%; /* Ensure the image takes the full width */
     height: 100%; /* Ensure the image takes the full height of the container */
@@ -768,13 +773,17 @@ p {
 .sections {
     width: 100%;
     height: 77.014218009478672985781990521327%;
-    margin-bottom: 17px;
+    margin: 17px 0;
 }
 
 .sectiongroup-1 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 4.8px;
+}
+
+.sectiongroup-1 div a div{
+    width: 30vw;
 }
 
 .food-container {
@@ -866,6 +875,10 @@ p {
     justify-content: space-around;
 }
 
+.sectiongroup-2 div a div{
+    width: 45vw;
+}
+
 .souvenirs-container {
     width: 90px;
     height: 110px;
@@ -931,7 +944,9 @@ p {
 .best-label {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */
-    margin-bottom: 10px; /* Space below the label */
+    margin-bottom: 0;
+    margin-left: 5%; /* Space below the label */
+    justify-content: space-between;
 }
 
 .best-title {
@@ -941,12 +956,14 @@ p {
 }
 
 .see-all {
+    text-align: right;
     font-family: sfprodisplay_regular;
     font-size: 18px; /* Adjust font size as needed */
     color: #0365fa; /* Change color for the "See All" text */
     cursor: pointer; /* Change cursor to pointer for interactivity */
     padding: 5px 10px; /* Add padding for a better touch area */
-    margin-left: 10rem; /* Push "See All" to the right */
+    margin: 0; /* Push "See All" to the right */
+    margin-right: 5%;
 }
 .sectiongroup1, .sectiongroup2 {
     display: flex; 
@@ -1033,9 +1050,9 @@ footer.expanded {
 .home-section-pages {
     display: flex;
     gap: 10px;
-    height: 34.8px;
+    height: 50px;
     margin-bottom: 20px;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .home-section-pages a{
@@ -1051,6 +1068,14 @@ footer.expanded {
     font-size: 11px;
     font-family: sfprodisplay_medium;
     margin: 11px;
+    text-align: center;
+}
+
+.home-section-pages a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
 }
 
 .food-section, .hotel-section, .tourist-spot-section, .home-section, 
@@ -1811,3 +1836,4 @@ footer.expanded {
     /*--*/
 
 }
+
